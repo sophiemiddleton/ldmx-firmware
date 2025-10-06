@@ -61,3 +61,15 @@ this executable receives the events/triggers sent by the server.
 
 # Extending for LDMX:
 
+## Adding a new Contributor
+
+To add a new contributor e.g. a new detector we need to define the server and client side. This involves creating several custom classes, in the following locations:
+
+Server side:
+ * daq/include/ldmx/builder/server/Configuration.hh: here we need to define expected number of events from the new contributors
+ * daq/include/ldmx/data/server/- : here we would need a few files for the DetBatchHeader, DetBatch,  DetEvent, DetBatchTail
+ * daq/include/ldmx/data/common/- : here we would need the same file names as above redefining to be shared between the server and client
+ * daq/src/ldmx/builder/server/DetBatch.hh
+ * daq/src/ldmx/data/server/*.cc : here we have the src code for the previously described Det classes
+
+plus additions to other parts of the code (look where svt is defined)
