@@ -1,0 +1,1103 @@
+misc/emulator/LdmxTest.cfg:3:Set Parameter NSvtEvents =   200
+misc/emulator/LdmxTest.cfg:11:Define Contributor  Svt0     SVT            \
+misc/emulator/LdmxTest.cfg:16:                    Events     = NSvtEvents \
+misc/emulator/LdmxTest.cfg:20:Define Contributor  Svt1   SVT              \
+misc/emulator/LdmxTest.cfg:25:                    Events     = NSvtEvents \
+misc/emulator/LdmxTest.cfg:41:Define Collection    TwoSvts Svt0, Svt1
+misc/emulator/LdmxTest.cfg:56:Set Svt0.RssiFrames = RssiFrames
+misc/emulator/LdmxTest.cfg:57:Set Svt1.RssiFrames = RssiFrames
+misc/emulator/LdmxTest.cfg:58:Set Svt1.Events     = 314
+misc/emulator/LdmxTest.cfg:59:Set Svt0.Timeout    = 4
+misc/emulator/LdmxTest.cfg:79:                      Contributors = TwoSvts \
+misc/emulator/LdmxTest.cfg:84:                     Contributors = Svt0,Svt1 \
+grep: text.txt: input file is also the output
+grep: install/x86_64-linux/lib/libldmx-data-client.so.0.0.0: binary file matches
+grep: install/x86_64-linux/lib/libldmx-builder-client.so.0.0.0: binary file matches
+grep: install/x86_64-linux/lib/libldmx-builder-server.so.0.0.0: binary file matches
+grep: install/x86_64-linux/lib/libldmx-data-server.so.0.0.0: binary file matches
+install/x86_64-linux/include/ldmx/builder/client/CfgContributor.hh:79:      Svt     =  2
+install/x86_64-linux/include/ldmx/builder/client/CfgContributor.hh:94:   bool isSvt     () const;
+install/x86_64-linux/include/ldmx/builder/client/CfgContributor.hh:194:inline bool CfgContributor::isSvt () const
+install/x86_64-linux/include/ldmx/builder/client/CfgContributor.hh:196:   bool   is_svt = (m_ctbType == ContributorType::Svt);
+install/x86_64-linux/include/ldmx/builder/client/CfgContributor.hh:239:   char const  *ctbName = isSvt     () ? "SVT"
+install/x86_64-linux/include/ldmx/data/client/SvtMultiSample.hh:8:  \file   ldmx/data/client/SvtMultiSample.hh
+install/x86_64-linux/include/ldmx/data/client/SvtMultiSample.hh:46:#include "ldmx/data/common/SvtMultiSample.hh"
+install/x86_64-linux/include/ldmx/data/client/SvtMultiSample.hh:62:class SvtMultiSample : public ldmx::data::common::SvtMultiSample
+install/x86_64-linux/include/ldmx/data/client/SvtMultiSample.hh:65:   SvtMultiSample () = delete;
+install/x86_64-linux/include/ldmx/data/client/SvtMultiSample.hh:82:   static void print (SvtMultiSample const *ms,
+install/x86_64-linux/include/ldmx/data/client/SvtMultiSample.hh:90:                         ldmx::data::common::SvtMultiSample::Mask     mask,
+install/x86_64-linux/include/ldmx/data/client/SvtMultiSample.hh:91:                         ldmx::data::common::SvtMultiSample::Offset offset);
+install/x86_64-linux/include/ldmx/data/client/SvtMultiSample.hh:116:inline uint16_t const *SvtMultiSample::locateSamples () const
+install/x86_64-linux/include/ldmx/data/client/SvtMultiSample.hh:126:inline ValueType SvtMultiSample::
+install/x86_64-linux/include/ldmx/data/client/SvtMultiSample.hh:128:                      ldmx::data::common::SvtMultiSample::Mask     mask,
+install/x86_64-linux/include/ldmx/data/client/SvtMultiSample.hh:129:                      ldmx::data::common::SvtMultiSample::Offset offset)
+install/x86_64-linux/include/ldmx/data/client/SvtMultiSample.hh:134:                          ldmx::data::common::SvtMultiSample::Mask,
+install/x86_64-linux/include/ldmx/data/client/SvtMultiSample.hh:135:                          ldmx::data::common::SvtMultiSample::Offset>
+install/x86_64-linux/include/ldmx/data/client/SvtMultiSample.hh:149:inline uint8_t SvtMultiSample::getRceAddress () const
+install/x86_64-linux/include/ldmx/data/client/SvtMultiSample.hh:166:inline uint8_t SvtMultiSample::getFebAddress () const
+install/x86_64-linux/include/ldmx/data/client/SvtMultiSample.hh:183:inline uint8_t SvtMultiSample::getApvChannel () const
+install/x86_64-linux/include/ldmx/data/client/SvtMultiSample.hh:200:inline uint8_t SvtMultiSample::getApvNumber () const
+install/x86_64-linux/include/ldmx/data/client/SvtMultiSample.hh:217:inline uint8_t SvtMultiSample::getHybridAddress () const
+install/x86_64-linux/include/ldmx/data/client/SvtMultiSample.hh:234:inline bool SvtMultiSample::getReadError () const
+install/x86_64-linux/include/ldmx/data/client/SvtMultiSample.hh:251:inline bool SvtMultiSample::getTail () const
+install/x86_64-linux/include/ldmx/data/client/SvtMultiSample.hh:268:inline bool SvtMultiSample::getHead () const
+install/x86_64-linux/include/ldmx/data/client/SvtMultiSample.hh:285:inline bool SvtMultiSample::getFilterFlag () const
+install/x86_64-linux/include/ldmx/data/client/SvtMultiSample.hh:303:inline void SvtMultiSample::print (int ims) const
+install/x86_64-linux/include/ldmx/data/client/SvtBatchHeader.hh:8:  \file   ldmx/data/client/SvtBatchHeader.hh
+install/x86_64-linux/include/ldmx/data/client/SvtBatchHeader.hh:43:#include "ldmx/data/common/SvtBatchHeader.hh"
+install/x86_64-linux/include/ldmx/data/client/SvtBatchHeader.hh:59:class SvtBatchHeader : public ldmx::data::common::SvtBatchHeader
+install/x86_64-linux/include/ldmx/data/client/SvtBatchHeader.hh:62:   SvtBatchHeader () = delete;
+install/x86_64-linux/include/ldmx/data/client/SvtBatchHeader.hh:71:   static void print (SvtBatchHeader const *hdr);
+install/x86_64-linux/include/ldmx/data/client/SvtBatchHeader.hh:77:                         ldmx::data::common::SvtBatchHeader::Mask     mask,
+install/x86_64-linux/include/ldmx/data/client/SvtBatchHeader.hh:78:                         ldmx::data::common::SvtBatchHeader::Offset offset);
+install/x86_64-linux/include/ldmx/data/client/SvtBatchHeader.hh:99:inline ValueType SvtBatchHeader::
+install/x86_64-linux/include/ldmx/data/client/SvtBatchHeader.hh:101:                      ldmx::data::common::SvtBatchHeader::Mask     mask,
+install/x86_64-linux/include/ldmx/data/client/SvtBatchHeader.hh:102:                      ldmx::data::common::SvtBatchHeader::Offset offset)
+install/x86_64-linux/include/ldmx/data/client/SvtBatchHeader.hh:107:                          ldmx::data::common::SvtBatchHeader::Mask,
+install/x86_64-linux/include/ldmx/data/client/SvtBatchHeader.hh:108:                          ldmx::data::common::SvtBatchHeader::Offset>
+install/x86_64-linux/include/ldmx/data/client/SvtBatchHeader.hh:122:inline uint8_t SvtBatchHeader::getVersion () const
+install/x86_64-linux/include/ldmx/data/client/SvtBatchHeader.hh:137:inline uint8_t SvtBatchHeader::getWidth () const
+install/x86_64-linux/include/ldmx/data/client/SvtBatchHeader.hh:154:inline uint8_t SvtBatchHeader::getSequenceNumber () const
+install/x86_64-linux/include/ldmx/data/client/SvtBatchHeader.hh:175:inline uint16_t SvtBatchHeader::getRsvd () const
+install/x86_64-linux/include/ldmx/data/client/SvtBatchHeader.hh:189:inline void SvtBatchHeader::print () const
+install/x86_64-linux/include/ldmx/data/client/SvtHeader.hh:8:  \file   ldmx/data/client/SvtHeader.hh
+install/x86_64-linux/include/ldmx/data/client/SvtHeader.hh:13:   This various member fields of the SvtEvent.
+install/x86_64-linux/include/ldmx/data/client/SvtHeader.hh:47:#include "ldmx/data/common/SvtHeader.hh"
+install/x86_64-linux/include/ldmx/data/client/SvtHeader.hh:63:class SvtHeader : public ldmx::data::common::SvtHeader
+install/x86_64-linux/include/ldmx/data/client/SvtHeader.hh:66:   SvtHeader () = delete;
+install/x86_64-linux/include/ldmx/data/client/SvtHeader.hh:75:   static void print (ldmx::data::client::SvtHeader const *hdr);
+install/x86_64-linux/include/ldmx/data/client/SvtHeader.hh:82:                         ldmx::data::common::SvtHeader::Mask     mask,
+install/x86_64-linux/include/ldmx/data/client/SvtHeader.hh:83:                         ldmx::data::common::SvtHeader::Offset offset);
+install/x86_64-linux/include/ldmx/data/client/SvtHeader.hh:107:inline uint32_t SvtHeader::getEventCounter () const
+install/x86_64-linux/include/ldmx/data/client/SvtHeader.hh:117:inline ValueType SvtHeader::
+install/x86_64-linux/include/ldmx/data/client/SvtHeader.hh:119:                      ldmx::data::common::SvtHeader::Mask     mask,
+install/x86_64-linux/include/ldmx/data/client/SvtHeader.hh:120:                      ldmx::data::common::SvtHeader::Offset offset)
+install/x86_64-linux/include/ldmx/data/client/SvtHeader.hh:125:                          ldmx::data::common::SvtHeader::Mask,
+install/x86_64-linux/include/ldmx/data/client/SvtHeader.hh:126:                          ldmx::data::common::SvtHeader::Offset>
+install/x86_64-linux/include/ldmx/data/client/SvtHeader.hh:140:inline uint8_t SvtHeader::getRceAddress () const
+install/x86_64-linux/include/ldmx/data/client/SvtHeader.hh:157:inline uint8_t SvtHeader::getMbf0 () const
+install/x86_64-linux/include/ldmx/data/client/SvtHeader.hh:173:inline void SvtHeader::print () const
+install/x86_64-linux/include/ldmx/data/client/SvtTrailer.hh:8:  \file   ldmx/data/client/SvtTrailer.hh
+install/x86_64-linux/include/ldmx/data/client/SvtTrailer.hh:13:   This various member fields of the SvtTrailer.
+install/x86_64-linux/include/ldmx/data/client/SvtTrailer.hh:47:#include "ldmx/data/common/SvtTrailer.hh"
+install/x86_64-linux/include/ldmx/data/client/SvtTrailer.hh:63:class SvtTrailer : public ldmx::data::common::SvtTrailer
+install/x86_64-linux/include/ldmx/data/client/SvtTrailer.hh:66:   SvtTrailer () = delete;
+install/x86_64-linux/include/ldmx/data/client/SvtTrailer.hh:78:   static void print (SvtTrailer const *trailer);
+install/x86_64-linux/include/ldmx/data/client/SvtTrailer.hh:84:                         ldmx::data::common::SvtTrailer::Mask     mask,
+install/x86_64-linux/include/ldmx/data/client/SvtTrailer.hh:85:                         ldmx::data::common::SvtTrailer::Offset offset);
+install/x86_64-linux/include/ldmx/data/client/SvtTrailer.hh:106:inline ValueType SvtTrailer::
+install/x86_64-linux/include/ldmx/data/client/SvtTrailer.hh:108:                      ldmx::data::common::SvtTrailer::Mask     mask,
+install/x86_64-linux/include/ldmx/data/client/SvtTrailer.hh:109:                      ldmx::data::common::SvtTrailer::Offset offset)
+install/x86_64-linux/include/ldmx/data/client/SvtTrailer.hh:114:                          ldmx::data::common::SvtTrailer::Mask,
+install/x86_64-linux/include/ldmx/data/client/SvtTrailer.hh:115:                          ldmx::data::common::SvtTrailer::Offset>
+install/x86_64-linux/include/ldmx/data/client/SvtTrailer.hh:129:inline uint16_t SvtTrailer::getMultiSampleCount () const
+install/x86_64-linux/include/ldmx/data/client/SvtTrailer.hh:150:inline uint16_t SvtTrailer::getSkipCount () const
+install/x86_64-linux/include/ldmx/data/client/SvtTrailer.hh:167:inline uint8_t SvtTrailer::getUndefined0 () const
+install/x86_64-linux/include/ldmx/data/client/SvtTrailer.hh:184:inline bool SvtTrailer::getApvSyncError () const
+install/x86_64-linux/include/ldmx/data/client/SvtTrailer.hh:201:inline bool SvtTrailer::getApvFifoBackupError () const
+install/x86_64-linux/include/ldmx/data/client/SvtTrailer.hh:218:inline uint8_t SvtTrailer::getUndefined1 () const
+install/x86_64-linux/include/ldmx/data/client/SvtTrailer.hh:235:inline void SvtTrailer::print () const
+install/x86_64-linux/include/ldmx/data/client/SvtBatch.hh:8:  \file   ldmx/data/client/SvtBatch.hh
+install/x86_64-linux/include/ldmx/data/client/SvtBatch.hh:44:#include "ldmx/data/client/SvtEvent.hh"
+install/x86_64-linux/include/ldmx/data/client/SvtBatch.hh:56:   class SvtBatchHeader;
+install/x86_64-linux/include/ldmx/data/client/SvtBatch.hh:78:class SvtBatch : public std::vector<SvtEvent>
+install/x86_64-linux/include/ldmx/data/client/SvtBatch.hh:81:   SvtBatch     (int eventCount);
+install/x86_64-linux/include/ldmx/data/client/SvtBatch.hh:85:   SvtBatchHeader const *getHeader () const;
+install/x86_64-linux/include/ldmx/data/client/SvtBatch.hh:89:   static void print (SvtBatch const *batch);
+install/x86_64-linux/include/ldmx/data/client/SvtBatch.hh:92:   SvtBatchHeader const *m_header;  /*!< The SVT batch header             */
+install/x86_64-linux/include/ldmx/data/client/SvtBatch.hh:103:#include "ldmx/data/client/SvtBatchTail.hh"
+install/x86_64-linux/include/ldmx/data/client/SvtBatch.hh:104:#include "ldmx/data/common/SvtBatchTail.hh"
+install/x86_64-linux/include/ldmx/data/client/SvtBatch.hh:121:   inline SvtBatch::SvtBatch (int eventCount) :
+install/x86_64-linux/include/ldmx/data/client/SvtBatch.hh:122:      std::vector<SvtEvent>()
+install/x86_64-linux/include/ldmx/data/client/SvtBatch.hh:140:inline int SvtBatch::populate (uint8_t const *ptr, uint32_t nbytes)
+install/x86_64-linux/include/ldmx/data/client/SvtBatch.hh:144:   /// printf ("SvtBatch %4" PRId32 " @ %p\n", nbytes, (void *)ptr);
+install/x86_64-linux/include/ldmx/data/client/SvtBatch.hh:148:   nbytes -= sizeof (ldmx::data::common::SvtBatchTail);
+install/x86_64-linux/include/ldmx/data/client/SvtBatch.hh:149:   ptr    -= sizeof (ldmx::data::common::SvtBatchTail);
+install/x86_64-linux/include/ldmx/data/client/SvtBatch.hh:157:      SvtBatchTail const *tail = 
+install/x86_64-linux/include/ldmx/data/client/SvtBatch.hh:159:      /// printf ("SvtBatch::populate tail @ %p %8.8" PRIx32 "\n",
+install/x86_64-linux/include/ldmx/data/client/SvtBatch.hh:168:      /// printf ("SvtBatch::populate evtBytes = %4" PRIx32 " @ %p\n",
+install/x86_64-linux/include/ldmx/data/client/SvtBatch.hh:181:      nbytes -= evtBytes + sizeof (ldmx::data::common::SvtBatchTail);
+install/x86_64-linux/include/ldmx/data/client/SvtBatch.hh:182:      ptr    -= evtBytes + sizeof (ldmx::data::common::SvtBatchTail);
+install/x86_64-linux/include/ldmx/data/client/SvtBatch.hh:183:      /// printf ("SvtBatch:populate %d @ %p\n", (int)nbytes, (void *)ptr);
+install/x86_64-linux/include/ldmx/data/client/SvtBatch.hh:195:  \brief Return a pointer the SvtBatch header
+install/x86_64-linux/include/ldmx/data/client/SvtBatch.hh:198:inline SvtBatchHeader const *SvtBatch::getHeader () const
+install/x86_64-linux/include/ldmx/data/client/SvtBatch.hh:210:inline void SvtBatch::print () const
+install/x86_64-linux/include/ldmx/data/client/SvtEvent.hh:8:  \file   ldmx/data/client/SvtEvent.hh
+install/x86_64-linux/include/ldmx/data/client/SvtEvent.hh:13:   This various member fields of the SvtEvent.
+install/x86_64-linux/include/ldmx/data/client/SvtEvent.hh:57:   class SvtHeader;
+install/x86_64-linux/include/ldmx/data/client/SvtEvent.hh:58:   class SvtMultiSample;
+install/x86_64-linux/include/ldmx/data/client/SvtEvent.hh:59:   class SvtTrailer;
+install/x86_64-linux/include/ldmx/data/client/SvtEvent.hh:82:class SvtEvent
+install/x86_64-linux/include/ldmx/data/client/SvtEvent.hh:85:   SvtEvent () { return; }
+install/x86_64-linux/include/ldmx/data/client/SvtEvent.hh:86:   SvtEvent (uint8_t const *ptr, uint32_t nbytes);
+install/x86_64-linux/include/ldmx/data/client/SvtEvent.hh:90:   SvtHeader       const *getHeader        () const;
+install/x86_64-linux/include/ldmx/data/client/SvtEvent.hh:91:   SvtMultiSample  const *getMultiSample   () const;
+install/x86_64-linux/include/ldmx/data/client/SvtEvent.hh:92:   SvtTrailer      const *getTrailer       () const;
+install/x86_64-linux/include/ldmx/data/client/SvtEvent.hh:97:   static void print (SvtEvent const *evt);
+install/x86_64-linux/include/ldmx/data/client/SvtEvent.hh:102:   SvtHeader  const  *m_header; /*!< Pointer to the SVT event header      */
+install/x86_64-linux/include/ldmx/data/client/SvtEvent.hh:103:   SvtTrailer const *m_trailer; /*!< Pointer to the SVT event trailer     */
+install/x86_64-linux/include/ldmx/data/client/SvtEvent.hh:113:#include "ldmx/data/client/SvtHeader.hh"
+install/x86_64-linux/include/ldmx/data/client/SvtEvent.hh:114:#include "ldmx/data/client/SvtMultiSample.hh"
+install/x86_64-linux/include/ldmx/data/client/SvtEvent.hh:115:#include "ldmx/data/client/SvtTrailer.hh"
+install/x86_64-linux/include/ldmx/data/client/SvtEvent.hh:132:inline SvtEvent::SvtEvent (uint8_t const *ptr, uint32_t nbytes) :
+install/x86_64-linux/include/ldmx/data/client/SvtEvent.hh:133:   m_header  (reinterpret_cast<SvtHeader  const *>(ptr - nbytes)),
+install/x86_64-linux/include/ldmx/data/client/SvtEvent.hh:134:   m_trailer (reinterpret_cast<SvtTrailer const *>(ptr 
+install/x86_64-linux/include/ldmx/data/client/SvtEvent.hh:135:                       - sizeof(ldmx::data::common::SvtTrailer)))
+install/x86_64-linux/include/ldmx/data/client/SvtEvent.hh:137:   //// printf ("SvtEvent %4" PRId32 " @ %p\n", nbytes, (void *)ptr);
+install/x86_64-linux/include/ldmx/data/client/SvtEvent.hh:152:inline SvtHeader const *SvtEvent::getHeader () const
+install/x86_64-linux/include/ldmx/data/client/SvtEvent.hh:154:   return reinterpret_cast<SvtHeader const *>(m_header);
+install/x86_64-linux/include/ldmx/data/client/SvtEvent.hh:166:inline SvtMultiSample const *SvtEvent::getMultiSample () const
+install/x86_64-linux/include/ldmx/data/client/SvtEvent.hh:168:   return reinterpret_cast<SvtMultiSample const *>(m_header + 1);
+install/x86_64-linux/include/ldmx/data/client/SvtEvent.hh:179:inline SvtTrailer const *SvtEvent::getTrailer () const
+install/x86_64-linux/include/ldmx/data/client/SvtEvent.hh:192:inline uint32_t SvtEvent::getNBytes () const
+install/x86_64-linux/include/ldmx/data/client/SvtEvent.hh:206:inline uint32_t SvtEvent::getMultiSampleCount () const
+install/x86_64-linux/include/ldmx/data/client/SvtEvent.hh:219:inline void SvtEvent::print () const
+install/x86_64-linux/include/ldmx/data/client/SvtBatchTail.hh:8:  \file   ldmx/data/client/SvtBatchTail.hh
+install/x86_64-linux/include/ldmx/data/client/SvtBatchTail.hh:13:   This 64-bit value acts as a separator between each SvtEvent.
+install/x86_64-linux/include/ldmx/data/client/SvtBatchTail.hh:48:#include "ldmx/data/common/SvtBatchTail.hh"
+install/x86_64-linux/include/ldmx/data/client/SvtBatchTail.hh:65:class SvtBatchTail : public ldmx::data::common::SvtBatchTail
+install/x86_64-linux/include/ldmx/data/client/SvtBatchTail.hh:68:   SvtBatchTail () = delete;
+install/x86_64-linux/include/ldmx/data/client/SvtBatchTail.hh:83:   static void print (SvtBatchTail const *tail);
+install/x86_64-linux/include/ldmx/data/client/SvtBatchTail.hh:90:                         ldmx::data::common::SvtBatchTail::Mask     mask,
+install/x86_64-linux/include/ldmx/data/client/SvtBatchTail.hh:91:                         ldmx::data::common::SvtBatchTail::Offset offset);
+install/x86_64-linux/include/ldmx/data/client/SvtBatchTail.hh:112:inline ValueType SvtBatchTail::
+install/x86_64-linux/include/ldmx/data/client/SvtBatchTail.hh:114:                      ldmx::data::common::SvtBatchTail::Mask     mask,
+install/x86_64-linux/include/ldmx/data/client/SvtBatchTail.hh:115:                      ldmx::data::common::SvtBatchTail::Offset offset)
+install/x86_64-linux/include/ldmx/data/client/SvtBatchTail.hh:120:                          ldmx::data::common::SvtBatchTail::Mask,
+install/x86_64-linux/include/ldmx/data/client/SvtBatchTail.hh:121:                          ldmx::data::common::SvtBatchTail::Offset>
+install/x86_64-linux/include/ldmx/data/client/SvtBatchTail.hh:138:inline uint32_t SvtBatchTail::getNValid () const
+install/x86_64-linux/include/ldmx/data/client/SvtBatchTail.hh:154:inline uint32_t SvtBatchTail::getNBytes () const
+install/x86_64-linux/include/ldmx/data/client/SvtBatchTail.hh:156:   /// printf ("SvtBatchTail: m_nvalid = %8" PRIx32 "\n", m_nvalid);
+install/x86_64-linux/include/ldmx/data/client/SvtBatchTail.hh:169:inline uint8_t SvtBatchTail::getTDest () const
+install/x86_64-linux/include/ldmx/data/client/SvtBatchTail.hh:186:inline uint8_t SvtBatchTail::getTUserFirst () const
+install/x86_64-linux/include/ldmx/data/client/SvtBatchTail.hh:203:inline bool SvtBatchTail::getErrorFlag () const
+install/x86_64-linux/include/ldmx/data/client/SvtBatchTail.hh:220:inline uint8_t SvtBatchTail::getTUserLast () const
+install/x86_64-linux/include/ldmx/data/client/SvtBatchTail.hh:238:inline uint8_t SvtBatchTail::getWidth () const
+install/x86_64-linux/include/ldmx/data/client/SvtBatchTail.hh:259:inline uint8_t SvtBatchTail::getRsvd () const
+install/x86_64-linux/include/ldmx/data/client/SvtBatchTail.hh:275:inline void SvtBatchTail::print () const
+install/x86_64-linux/include/ldmx/data/common/SvtMultiSample.hh:8:  \file   ldmx/data/common/Svt.hh
+install/x86_64-linux/include/ldmx/data/common/SvtMultiSample.hh:9:  \brief  Defines the Svt event multi- sample data structure.
+install/x86_64-linux/include/ldmx/data/common/SvtMultiSample.hh:68:struct SvtMultiSample
+install/x86_64-linux/include/ldmx/data/common/SvtBatchTail.hh:8:  \file   ldmx/data/common/SvtBatchTail.hh
+install/x86_64-linux/include/ldmx/data/common/SvtBatchTail.hh:9:  \brief  Defines the Svt batch tail structure.
+install/x86_64-linux/include/ldmx/data/common/SvtBatchTail.hh:13:   The BatchTail acts as a separator between the batched SvtEvents.
+install/x86_64-linux/include/ldmx/data/common/SvtBatchTail.hh:15:   only goes at the end of the batched SvtEvents.
+install/x86_64-linux/include/ldmx/data/common/SvtBatchTail.hh:66:struct SvtBatchTail
+install/x86_64-linux/include/ldmx/data/common/SvtBatchHeader.hh:8:  \file   ldmx/data/common/SvtBatchHeader.hh
+install/x86_64-linux/include/ldmx/data/common/SvtBatchHeader.hh:9:  \brief  Defines the Svt batch header structure.
+install/x86_64-linux/include/ldmx/data/common/SvtBatchHeader.hh:64:struct SvtBatchHeader
+install/x86_64-linux/include/ldmx/data/common/SvtTrailer.hh:8:  \file   ldmx/data/common/SvtTrailer.hh
+install/x86_64-linux/include/ldmx/data/common/SvtTrailer.hh:9:  \brief  Defines the Svt event trailer structure.
+install/x86_64-linux/include/ldmx/data/common/SvtTrailer.hh:59:         Svt Event Trailer
+install/x86_64-linux/include/ldmx/data/common/SvtTrailer.hh:62:struct SvtTrailer
+install/x86_64-linux/include/ldmx/data/common/SvtHeader.hh:8:  \file   ldmx/data/common/Svt.hh
+install/x86_64-linux/include/ldmx/data/common/SvtHeader.hh:9:  \brief  Defines the Svt evernt header structure.
+install/x86_64-linux/include/ldmx/data/common/SvtHeader.hh:62:struct SvtHeader
+install/x86_64-linux/include/ldmx/data/server/SvtEvent.hh:8:  \file   ldmx/data/server/SvtEvent.hh
+install/x86_64-linux/include/ldmx/data/server/SvtEvent.hh:55:   class SvtBatch;
+install/x86_64-linux/include/ldmx/data/server/SvtEvent.hh:56:   class SvtHeader;
+install/x86_64-linux/include/ldmx/data/server/SvtEvent.hh:57:   class SvtMultiSample;
+install/x86_64-linux/include/ldmx/data/server/SvtEvent.hh:58:   class SvtTrailer;
+install/x86_64-linux/include/ldmx/data/server/SvtEvent.hh:80:class SvtEvent
+install/x86_64-linux/include/ldmx/data/server/SvtEvent.hh:83:   SvtEvent (SvtBatch *batch);
+install/x86_64-linux/include/ldmx/data/server/SvtEvent.hh:89:   SvtHeader      *getHeader      (std::size_t nbytes);
+install/x86_64-linux/include/ldmx/data/server/SvtEvent.hh:90:   SvtMultiSample *getMultiSample (std::size_t nbytes);
+install/x86_64-linux/include/ldmx/data/server/SvtEvent.hh:91:   SvtTrailer     *getTrailer     (std::size_t nbytes);
+install/x86_64-linux/include/ldmx/data/server/SvtEvent.hh:98:   SvtBatch *m_batch; /*!< The controlling batcher                        */
+install/x86_64-linux/include/ldmx/data/server/SvtEvent.hh:111:#include "ldmx/data/server/SvtBatch.hh"
+install/x86_64-linux/include/ldmx/data/server/SvtEvent.hh:122:  \brief Construct a Svt Event Record
+install/x86_64-linux/include/ldmx/data/server/SvtEvent.hh:128:inline SvtEvent::SvtEvent (SvtBatch *batch) :
+install/x86_64-linux/include/ldmx/data/server/SvtEvent.hh:142:  \brief  Returns a pointer to where in the buffer to place the SvtHeader
+install/x86_64-linux/include/ldmx/data/server/SvtEvent.hh:143:  \return A pointer to where in the buffer to place the SvtHeader
+install/x86_64-linux/include/ldmx/data/server/SvtEvent.hh:148:inline SvtHeader *SvtEvent::getHeader (std::size_t nbytes)
+install/x86_64-linux/include/ldmx/data/server/SvtEvent.hh:151:   return reinterpret_cast<SvtHeader *>
+install/x86_64-linux/include/ldmx/data/server/SvtEvent.hh:161:          SvtMultiSample data.
+install/x86_64-linux/include/ldmx/data/server/SvtEvent.hh:162:  \return A pointer to where in the buffer to place the SvtMultiSample data
+install/x86_64-linux/include/ldmx/data/server/SvtEvent.hh:167:inline SvtMultiSample *SvtEvent::getMultiSample (std::size_t nbytes)
+install/x86_64-linux/include/ldmx/data/server/SvtEvent.hh:170:   return reinterpret_cast<SvtMultiSample *>
+install/x86_64-linux/include/ldmx/data/server/SvtEvent.hh:179:  \brief  Returns a pointer to where in the buffer to place the SvtTrailer
+install/x86_64-linux/include/ldmx/data/server/SvtEvent.hh:180:  \return A pointer to where in the buffer to place the SvtTailer
+install/x86_64-linux/include/ldmx/data/server/SvtEvent.hh:187:inline SvtTrailer *SvtEvent::getTrailer (std::size_t nbytes)
+install/x86_64-linux/include/ldmx/data/server/SvtEvent.hh:190:   return reinterpret_cast<SvtTrailer *>
+install/x86_64-linux/include/ldmx/data/server/SvtEvent.hh:203:inline uint32_t SvtEvent::getSize () const
+install/x86_64-linux/include/ldmx/data/server/SvtEvent.hh:220:inline uint32_t SvtEvent::getNValid () const
+install/x86_64-linux/include/ldmx/data/server/SvtEvent.hh:234:inline void SvtEvent::reset ()
+install/x86_64-linux/include/ldmx/data/server/SvtMultiSample.hh:8:  \file   ldmx/data/server/SvtMultiSample.hh
+install/x86_64-linux/include/ldmx/data/server/SvtMultiSample.hh:43:#include "ldmx/data/common/SvtMultiSample.hh"
+install/x86_64-linux/include/ldmx/data/server/SvtMultiSample.hh:56:   class SvtEvent;
+install/x86_64-linux/include/ldmx/data/server/SvtMultiSample.hh:78:class SvtMultiSample : public ldmx::data::common::SvtMultiSample
+install/x86_64-linux/include/ldmx/data/server/SvtMultiSample.hh:81:   SvtMultiSample () = delete;
+install/x86_64-linux/include/ldmx/data/server/SvtMultiSample.hh:82:   SvtMultiSample (uint32_t         summary);
+install/x86_64-linux/include/ldmx/data/server/SvtMultiSample.hh:83:   SvtMultiSample (uint16_t const samples[6],
+install/x86_64-linux/include/ldmx/data/server/SvtMultiSample.hh:88:                       ldmx::data::server::SvtEvent *event);
+install/x86_64-linux/include/ldmx/data/server/SvtMultiSample.hh:125:                        ldmx::data::common::SvtMultiSample::Mask      mask,
+install/x86_64-linux/include/ldmx/data/server/SvtMultiSample.hh:126:                        ldmx::data::common::SvtMultiSample::Offset offset);
+install/x86_64-linux/include/ldmx/data/server/SvtMultiSample.hh:138:#include "ldmx/data/server/SvtEvent.hh"
+install/x86_64-linux/include/ldmx/data/server/SvtMultiSample.hh:156:inline SvtMultiSample::SvtMultiSample (uint32_t summary)
+install/x86_64-linux/include/ldmx/data/server/SvtMultiSample.hh:172:inline SvtMultiSample::SvtMultiSample (uint16_t const samples[6],
+install/x86_64-linux/include/ldmx/data/server/SvtMultiSample.hh:201:inline uint32_t SvtMultiSample::composeSummary (uint8_t    rceAddress,
+install/x86_64-linux/include/ldmx/data/server/SvtMultiSample.hh:234:      *SvtMultiSample::operator new (std::size_t                  nbytes, 
+install/x86_64-linux/include/ldmx/data/server/SvtMultiSample.hh:235:                                     ldmx::data::server::SvtEvent *event)
+install/x86_64-linux/include/ldmx/data/server/SvtMultiSample.hh:249:inline uint16_t *SvtMultiSample::locateSamples ()
+install/x86_64-linux/include/ldmx/data/server/SvtMultiSample.hh:264:inline void SvtMultiSample::fillMultiSample (uint16_t const samples[6])
+install/x86_64-linux/include/ldmx/data/server/SvtMultiSample.hh:287:inline void SvtMultiSample::fillMultiSample (uint16_t s0, uint16_t s1,
+install/x86_64-linux/include/ldmx/data/server/SvtMultiSample.hh:313:inline uint32_t SvtMultiSample::
+install/x86_64-linux/include/ldmx/data/server/SvtMultiSample.hh:315:                     ldmx::data::common::SvtMultiSample::Mask     mask,
+install/x86_64-linux/include/ldmx/data/server/SvtMultiSample.hh:316:                     ldmx::data::common::SvtMultiSample::Offset offset)
+install/x86_64-linux/include/ldmx/data/server/SvtMultiSample.hh:321:                           ldmx::data::common::SvtMultiSample::Mask, 
+install/x86_64-linux/include/ldmx/data/server/SvtMultiSample.hh:322:                           ldmx::data::common::SvtMultiSample::Offset>
+install/x86_64-linux/include/ldmx/data/server/SvtMultiSample.hh:337:inline uint32_t SvtMultiSample::addRceAddress (uint8_t rceAddress)
+install/x86_64-linux/include/ldmx/data/server/SvtMultiSample.hh:355:inline uint32_t SvtMultiSample::addFebAddress (uint8_t febAddress)
+install/x86_64-linux/include/ldmx/data/server/SvtMultiSample.hh:373:inline uint32_t SvtMultiSample::addApvChannel (uint8_t apvChannel)
+install/x86_64-linux/include/ldmx/data/server/SvtMultiSample.hh:391:inline uint32_t SvtMultiSample::addApvNumber (uint8_t apvNumber)
+install/x86_64-linux/include/ldmx/data/server/SvtMultiSample.hh:409:inline uint32_t SvtMultiSample::addHybridAddress  (uint8_t hybridAddress)
+install/x86_64-linux/include/ldmx/data/server/SvtMultiSample.hh:427:inline uint32_t SvtMultiSample::addReadError (bool readError)
+install/x86_64-linux/include/ldmx/data/server/SvtMultiSample.hh:443:inline uint32_t SvtMultiSample::addTail ()
+install/x86_64-linux/include/ldmx/data/server/SvtMultiSample.hh:461:inline uint32_t SvtMultiSample::addTail (bool tail)
+install/x86_64-linux/include/ldmx/data/server/SvtMultiSample.hh:477:inline uint32_t SvtMultiSample::addHead ()
+install/x86_64-linux/include/ldmx/data/server/SvtMultiSample.hh:495:inline uint32_t SvtMultiSample::addHead (bool head)
+install/x86_64-linux/include/ldmx/data/server/SvtMultiSample.hh:513:inline uint32_t SvtMultiSample::addFilterFlag (bool filterFlag)
+install/x86_64-linux/include/ldmx/data/server/SvtTrailer.hh:8:  \file   ldmx/data/server/SvtTrailer.hh
+install/x86_64-linux/include/ldmx/data/server/SvtTrailer.hh:43:#include "ldmx/data/common/SvtTrailer.hh"
+install/x86_64-linux/include/ldmx/data/server/SvtTrailer.hh:55:   class SvtEvent;
+install/x86_64-linux/include/ldmx/data/server/SvtTrailer.hh:77:class SvtTrailer : public ldmx::data::common::SvtTrailer
+install/x86_64-linux/include/ldmx/data/server/SvtTrailer.hh:80:   SvtTrailer () = delete;
+install/x86_64-linux/include/ldmx/data/server/SvtTrailer.hh:81:   SvtTrailer (uint16_t multiSampleCount, 
+install/x86_64-linux/include/ldmx/data/server/SvtTrailer.hh:86:                       ldmx::data::server::SvtEvent *event);
+install/x86_64-linux/include/ldmx/data/server/SvtTrailer.hh:102:                        ldmx::data::common::SvtTrailer::Mask     mask,
+install/x86_64-linux/include/ldmx/data/server/SvtTrailer.hh:103:                        ldmx::data::common::SvtTrailer::Offset offset);
+install/x86_64-linux/include/ldmx/data/server/SvtTrailer.hh:114:#include "ldmx/data/server/SvtEvent.hh"
+install/x86_64-linux/include/ldmx/data/server/SvtTrailer.hh:125:  \brief Svt event trailer constructor
+install/x86_64-linux/include/ldmx/data/server/SvtTrailer.hh:132:inline SvtTrailer::SvtTrailer (uint16_t multiSampleCount, 
+install/x86_64-linux/include/ldmx/data/server/SvtTrailer.hh:152:inline void *SvtTrailer::operator new (std::size_t                  nbytes, 
+install/x86_64-linux/include/ldmx/data/server/SvtTrailer.hh:153:                                       ldmx::data::server::SvtEvent *event)
+install/x86_64-linux/include/ldmx/data/server/SvtTrailer.hh:155:   /// printf ("SvtTrailer::new %8" PRIx32 "\n", (int)nbytes);
+install/x86_64-linux/include/ldmx/data/server/SvtTrailer.hh:176:inline uint32_t SvtTrailer::
+install/x86_64-linux/include/ldmx/data/server/SvtTrailer.hh:178:                  ldmx::data::common::SvtTrailer::Mask     mask,
+install/x86_64-linux/include/ldmx/data/server/SvtTrailer.hh:179:                  ldmx::data::common::SvtTrailer::Offset offset)
+install/x86_64-linux/include/ldmx/data/server/SvtTrailer.hh:184:                           ldmx::data::common::SvtTrailer::Mask, 
+install/x86_64-linux/include/ldmx/data/server/SvtTrailer.hh:185:                           ldmx::data::common::SvtTrailer::Offset>
+install/x86_64-linux/include/ldmx/data/server/SvtTrailer.hh:202:inline uint32_t SvtTrailer::addMultiSampleCount (uint16_t multiSampleCount)
+install/x86_64-linux/include/ldmx/data/server/SvtTrailer.hh:222:inline uint32_t SvtTrailer::addSkipCount (uint16_t skipCount)
+install/x86_64-linux/include/ldmx/data/server/SvtTrailer.hh:240:inline uint32_t SvtTrailer::addUndefined0 ()
+install/x86_64-linux/include/ldmx/data/server/SvtTrailer.hh:266:inline uint32_t SvtTrailer::addUndefined0 (uint8_t undefined0)
+install/x86_64-linux/include/ldmx/data/server/SvtTrailer.hh:285:inline uint32_t SvtTrailer::addApvSyncError (bool apvSyncError)
+install/x86_64-linux/include/ldmx/data/server/SvtTrailer.hh:305:inline uint32_t SvtTrailer::addApvFifoBackupError (bool apvFifoBackupError)
+install/x86_64-linux/include/ldmx/data/server/SvtTrailer.hh:324:inline uint32_t SvtTrailer::addUndefined1 ()
+install/x86_64-linux/include/ldmx/data/server/SvtTrailer.hh:349:inline uint32_t SvtTrailer::addUndefined1 (uint8_t undefined1)
+install/x86_64-linux/include/ldmx/data/server/SvtHeader.hh:8:  \file   ldmx/data/server/SvtHeader.hh
+install/x86_64-linux/include/ldmx/data/server/SvtHeader.hh:43:#include "ldmx/data/common/SvtHeader.hh"
+install/x86_64-linux/include/ldmx/data/server/SvtHeader.hh:56:   class SvtEvent;
+install/x86_64-linux/include/ldmx/data/server/SvtHeader.hh:77:class SvtHeader : public ldmx::data::common::SvtHeader
+install/x86_64-linux/include/ldmx/data/server/SvtHeader.hh:80:   SvtHeader () = delete;
+install/x86_64-linux/include/ldmx/data/server/SvtHeader.hh:81:   SvtHeader (uint32_t eventCounter, uint8_t rceAddress);
+install/x86_64-linux/include/ldmx/data/server/SvtHeader.hh:82:   SvtHeader (uint32_t eventCounter, uint8_t rceAddress, uint32_t mbf0);
+install/x86_64-linux/include/ldmx/data/server/SvtHeader.hh:87:                       ldmx::data::server::SvtEvent *event);
+install/x86_64-linux/include/ldmx/data/server/SvtHeader.hh:98:                        ldmx::data::common::SvtHeader::Mask     mask,
+install/x86_64-linux/include/ldmx/data/server/SvtHeader.hh:99:                        ldmx::data::common::SvtHeader::Offset offset);
+install/x86_64-linux/include/ldmx/data/server/SvtHeader.hh:109:#include "ldmx/data/server/SvtEvent.hh"
+install/x86_64-linux/include/ldmx/data/server/SvtHeader.hh:125:inline SvtHeader::SvtHeader (uint32_t eventCounter,
+install/x86_64-linux/include/ldmx/data/server/SvtHeader.hh:146:inline SvtHeader::SvtHeader (uint32_t eventCounter, 
+install/x86_64-linux/include/ldmx/data/server/SvtHeader.hh:165:inline void *SvtHeader::operator new (std::size_t                  nbytes, 
+install/x86_64-linux/include/ldmx/data/server/SvtHeader.hh:166:                                      ldmx::data::server::SvtEvent *event)
+install/x86_64-linux/include/ldmx/data/server/SvtHeader.hh:185:inline uint32_t SvtHeader::
+install/x86_64-linux/include/ldmx/data/server/SvtHeader.hh:187:                     ldmx::data::common::SvtHeader::Mask     mask,
+install/x86_64-linux/include/ldmx/data/server/SvtHeader.hh:188:                     ldmx::data::common::SvtHeader::Offset offset)
+install/x86_64-linux/include/ldmx/data/server/SvtHeader.hh:193:                              ldmx::data::common::SvtHeader::Mask, 
+install/x86_64-linux/include/ldmx/data/server/SvtHeader.hh:194:                              ldmx::data::common::SvtHeader::Offset>
+install/x86_64-linux/include/ldmx/data/server/SvtHeader.hh:211:inline uint32_t SvtHeader::addRceAddress (uint32_t  rceAddress)
+install/x86_64-linux/include/ldmx/data/server/SvtHeader.hh:229:inline uint32_t SvtHeader::addMbf0 ()
+install/x86_64-linux/include/ldmx/data/server/SvtHeader.hh:255:inline uint32_t SvtHeader::addMbf0 (uint32_t  mbf0)
+install/x86_64-linux/include/ldmx/data/server/SvtBatch.hh:8:  \file   ldmx/data/server/SvtBatch.hh
+install/x86_64-linux/include/ldmx/data/server/SvtBatch.hh:54:   class SvtBatchHeader;
+install/x86_64-linux/include/ldmx/data/server/SvtBatch.hh:55:   class SvtEvent;
+install/x86_64-linux/include/ldmx/data/server/SvtBatch.hh:56:   class SvtBatchTail;
+install/x86_64-linux/include/ldmx/data/server/SvtBatch.hh:79:class SvtBatch
+install/x86_64-linux/include/ldmx/data/server/SvtBatch.hh:82:   SvtBatch (void *buffer, size_t nbytes);
+install/x86_64-linux/include/ldmx/data/server/SvtBatch.hh:85:   SvtBatchHeader *getHeader(std::size_t nbytes);
+install/x86_64-linux/include/ldmx/data/server/SvtBatch.hh:86:   SvtEvent       *getEvent ();
+install/x86_64-linux/include/ldmx/data/server/SvtBatch.hh:87:   SvtBatchTail   *getTail  (std::size_t nbytes);
+install/x86_64-linux/include/ldmx/data/server/SvtBatch.hh:120:  \brief Construct a Svt Event Batch
+install/x86_64-linux/include/ldmx/data/server/SvtBatch.hh:125:inline SvtBatch::SvtBatch (void *buffer, size_t nbytes) :
+install/x86_64-linux/include/ldmx/data/server/SvtBatch.hh:141:inline void const *SvtBatch::getBuffer () const
+install/x86_64-linux/include/ldmx/data/server/SvtBatch.hh:155:inline uint32_t  SvtBatch::getNbytes () const
+install/x86_64-linux/include/ldmx/data/server/SvtBatch.hh:169:inline uint32_t SvtBatch::left () const
+install/x86_64-linux/include/ldmx/data/server/SvtBatch.hh:182:inline void SvtBatch::reset ()
+install/x86_64-linux/include/ldmx/data/server/SvtBatch.hh:195:          batch's buffer to place the SvtBatchHeader
+install/x86_64-linux/include/ldmx/data/server/SvtBatch.hh:197:          SvtBatchHeader
+install/x86_64-linux/include/ldmx/data/server/SvtBatch.hh:200:inline SvtBatchHeader *SvtBatch::getHeader (std::size_t nbytes)
+install/x86_64-linux/include/ldmx/data/server/SvtBatch.hh:202:   return reinterpret_cast<SvtBatchHeader *>(m_alloc.allocate (nbytes));
+install/x86_64-linux/include/ldmx/data/server/SvtBatch.hh:210:  \brief  Returns a pointer to where in the buffer to place the SvtEvent
+install/x86_64-linux/include/ldmx/data/server/SvtBatch.hh:211:  \return A pointer to where in the buffer to place the SvtEvent
+install/x86_64-linux/include/ldmx/data/server/SvtBatch.hh:219:inline SvtEvent *SvtBatch::getEvent ()
+install/x86_64-linux/include/ldmx/data/server/SvtBatch.hh:221:   return reinterpret_cast<SvtEvent *>(m_alloc.next ());
+install/x86_64-linux/include/ldmx/data/server/SvtBatch.hh:230:          batch's buffer to place the SvtBatchTail.
+install/x86_64-linux/include/ldmx/data/server/SvtBatch.hh:231:  \return A pointer to where in the buffer to place the SvtBatchTail
+install/x86_64-linux/include/ldmx/data/server/SvtBatch.hh:234:inline SvtBatchTail *SvtBatch::getTail (std::size_t nbytes)
+install/x86_64-linux/include/ldmx/data/server/SvtBatch.hh:236:   return reinterpret_cast<SvtBatchTail *>(m_alloc.allocate (nbytes));
+install/x86_64-linux/include/ldmx/data/server/SvtBatch.hh:248:inline uint32_t SvtBatch::getNevents () const
+install/x86_64-linux/include/ldmx/data/server/SvtBatchHeader.hh:8:  \file   ldmx/data/server/SvtBatchHeader.hh
+install/x86_64-linux/include/ldmx/data/server/SvtBatchHeader.hh:43:#include "ldmx/data/common/SvtBatchHeader.hh"
+install/x86_64-linux/include/ldmx/data/server/SvtBatchHeader.hh:56:   class SvtBatch;
+install/x86_64-linux/include/ldmx/data/server/SvtBatchHeader.hh:78:class SvtBatchHeader : public ldmx::data::common::SvtBatchHeader
+install/x86_64-linux/include/ldmx/data/server/SvtBatchHeader.hh:81:   SvtBatchHeader ();
+install/x86_64-linux/include/ldmx/data/server/SvtBatchHeader.hh:83:   SvtBatchHeader (uint32_t sequence);
+install/x86_64-linux/include/ldmx/data/server/SvtBatchHeader.hh:85:   SvtBatchHeader (uint32_t  version, 
+install/x86_64-linux/include/ldmx/data/server/SvtBatchHeader.hh:92:                       ldmx::data::server::SvtBatch *batch);
+install/x86_64-linux/include/ldmx/data/server/SvtBatchHeader.hh:107:                   ldmx::data::common::SvtBatchHeader::Mask     mask,
+install/x86_64-linux/include/ldmx/data/server/SvtBatchHeader.hh:108:                   ldmx::data::common::SvtBatchHeader::Offset offset);
+install/x86_64-linux/include/ldmx/data/server/SvtBatchHeader.hh:119:#include "ldmx/data/server/SvtBatch.hh"
+install/x86_64-linux/include/ldmx/data/server/SvtBatchHeader.hh:128:inline SvtBatchHeader::SvtBatchHeader () :
+install/x86_64-linux/include/ldmx/data/server/SvtBatchHeader.hh:129:       SvtBatchHeader (Version, Width, 0, Rsvd)
+install/x86_64-linux/include/ldmx/data/server/SvtBatchHeader.hh:138:inline SvtBatchHeader::SvtBatchHeader (uint32_t sequence) :
+install/x86_64-linux/include/ldmx/data/server/SvtBatchHeader.hh:139:       SvtBatchHeader (Version, Width, sequence, Rsvd)
+install/x86_64-linux/include/ldmx/data/server/SvtBatchHeader.hh:149:inline SvtBatchHeader::SvtBatchHeader (uint32_t  version, 
+install/x86_64-linux/include/ldmx/data/server/SvtBatchHeader.hh:174:inline void *SvtBatchHeader::operator
+install/x86_64-linux/include/ldmx/data/server/SvtBatchHeader.hh:176:                  ldmx::data::server::SvtBatch *batch)
+install/x86_64-linux/include/ldmx/data/server/SvtBatchHeader.hh:195:inline uint32_t SvtBatchHeader::add
+install/x86_64-linux/include/ldmx/data/server/SvtBatchHeader.hh:197:                  ldmx::data::common::SvtBatchHeader::Mask     mask,
+install/x86_64-linux/include/ldmx/data/server/SvtBatchHeader.hh:198:                  ldmx::data::common::SvtBatchHeader::Offset offset)
+install/x86_64-linux/include/ldmx/data/server/SvtBatchHeader.hh:203:                        ldmx::data::common::SvtBatchHeader::Mask, 
+install/x86_64-linux/include/ldmx/data/server/SvtBatchHeader.hh:204:                        ldmx::data::common::SvtBatchHeader::Offset>
+install/x86_64-linux/include/ldmx/data/server/SvtBatchHeader.hh:219:inline uint32_t SvtBatchHeader::addVersion ()
+install/x86_64-linux/include/ldmx/data/server/SvtBatchHeader.hh:237:inline uint32_t SvtBatchHeader::addVersion (uint32_t version)
+install/x86_64-linux/include/ldmx/data/server/SvtBatchHeader.hh:253:inline uint32_t SvtBatchHeader::addWidth ()
+install/x86_64-linux/include/ldmx/data/server/SvtBatchHeader.hh:280:inline uint32_t SvtBatchHeader::addWidth (uint32_t width)
+install/x86_64-linux/include/ldmx/data/server/SvtBatchHeader.hh:299:inline uint32_t SvtBatchHeader::addSequence (uint32_t sequenceNumber)
+install/x86_64-linux/include/ldmx/data/server/SvtBatchHeader.hh:317:inline uint32_t SvtBatchHeader::addRsvd ()
+install/x86_64-linux/include/ldmx/data/server/SvtBatchHeader.hh:340:inline uint32_t SvtBatchHeader::addRsvd (uint32_t rsvd)
+install/x86_64-linux/include/ldmx/data/server/SvtGenerator.hh:8:  \file   ldmx/data/server/SvtGenerator.cc
+install/x86_64-linux/include/ldmx/data/server/SvtGenerator.hh:54:   class SvtBatch;
+install/x86_64-linux/include/ldmx/data/server/SvtGenerator.hh:75:class SvtGenerator
+install/x86_64-linux/include/ldmx/data/server/SvtGenerator.hh:78:   SvtGenerator  (uint8_t rceAddress);
+install/x86_64-linux/include/ldmx/data/server/SvtGenerator.hh:80:   void generate (SvtBatch        *batch,
+install/x86_64-linux/include/ldmx/data/server/SvtGenerator.hh:85:   void reset      (ldmx::data::server::SvtBatch *batch);
+install/x86_64-linux/include/ldmx/data/server/SvtGenerator.hh:86:   void addHeader  (ldmx::data::server::SvtBatch *batch);
+install/x86_64-linux/include/ldmx/data/server/SvtGenerator.hh:87:   int  addEvent   (ldmx::data::server::SvtBatch *batch,
+install/x86_64-linux/include/ldmx/data/server/SvtGenerator.hh:120:inline void SvtGenerator::setBatchSeqNumber (uint32_t batchSeqNumber)
+install/x86_64-linux/include/ldmx/data/server/SvtGenerator.hh:135:inline void SvtGenerator::setEventSeqNumber (uint32_t eventSeqNumber)
+install/x86_64-linux/include/ldmx/data/server/SvtBatchTail.hh:8:  \file   ldmx/data/server/SvtBatchTail.hh
+install/x86_64-linux/include/ldmx/data/server/SvtBatchTail.hh:13:   This 64-bit value acts as a separator between each SvtEvent.
+install/x86_64-linux/include/ldmx/data/server/SvtBatchTail.hh:49:#include "ldmx/data/common/SvtBatchTail.hh"
+install/x86_64-linux/include/ldmx/data/server/SvtBatchTail.hh:61:   class SvtBatch;
+install/x86_64-linux/include/ldmx/data/server/SvtBatchTail.hh:81:class SvtBatchTail : public ldmx::data::common::SvtBatchTail
+install/x86_64-linux/include/ldmx/data/server/SvtBatchTail.hh:84:   SvtBatchTail ();
+install/x86_64-linux/include/ldmx/data/server/SvtBatchTail.hh:85:   SvtBatchTail (uint32_t     nvalid,
+install/x86_64-linux/include/ldmx/data/server/SvtBatchTail.hh:88:   SvtBatchTail (uint32_t     nvalid, 
+install/x86_64-linux/include/ldmx/data/server/SvtBatchTail.hh:96:                       ldmx::data::server::SvtBatch *batch);
+install/x86_64-linux/include/ldmx/data/server/SvtBatchTail.hh:109:                        ldmx::data::common::SvtBatchTail::Mask     mask,
+install/x86_64-linux/include/ldmx/data/server/SvtBatchTail.hh:110:                        ldmx::data::common::SvtBatchTail::Offset offset);
+install/x86_64-linux/include/ldmx/data/server/SvtBatchTail.hh:122:#include "ldmx/data/server/SvtBatch.hh"
+install/x86_64-linux/include/ldmx/data/server/SvtBatchTail.hh:136:inline SvtBatchTail::SvtBatchTail ()
+install/x86_64-linux/include/ldmx/data/server/SvtBatchTail.hh:157:inline SvtBatchTail::SvtBatchTail (uint32_t nvalid, 
+install/x86_64-linux/include/ldmx/data/server/SvtBatchTail.hh:183:inline SvtBatchTail::SvtBatchTail (uint32_t     nvalid, 
+install/x86_64-linux/include/ldmx/data/server/SvtBatchTail.hh:208:inline void *SvtBatchTail::
+install/x86_64-linux/include/ldmx/data/server/SvtBatchTail.hh:210:                           ldmx::data::server::SvtBatch *batch)
+install/x86_64-linux/include/ldmx/data/server/SvtBatchTail.hh:229:inline uint32_t SvtBatchTail::add 
+install/x86_64-linux/include/ldmx/data/server/SvtBatchTail.hh:231:                     ldmx::data::common::SvtBatchTail::Mask     mask,
+install/x86_64-linux/include/ldmx/data/server/SvtBatchTail.hh:232:                     ldmx::data::common::SvtBatchTail::Offset offset)
+install/x86_64-linux/include/ldmx/data/server/SvtBatchTail.hh:237:                ldmx::data::common::SvtBatchTail::Mask, 
+install/x86_64-linux/include/ldmx/data/server/SvtBatchTail.hh:238:                ldmx::data::common::SvtBatchTail::Offset>(value, 
+install/x86_64-linux/include/ldmx/data/server/SvtBatchTail.hh:255:inline uint32_t SvtBatchTail::addTDest (uint8_t tDest)
+install/x86_64-linux/include/ldmx/data/server/SvtBatchTail.hh:274:inline uint32_t SvtBatchTail::addTUserFirst (uint8_t tUserFirst)
+install/x86_64-linux/include/ldmx/data/server/SvtBatchTail.hh:293:inline uint32_t SvtBatchTail::addErrorFlag (bool errorFlag)
+install/x86_64-linux/include/ldmx/data/server/SvtBatchTail.hh:312:inline uint32_t SvtBatchTail::addTUserLast (uint8_t tUserLast)
+install/x86_64-linux/include/ldmx/data/server/SvtBatchTail.hh:330:                   ldmx::common::SvtBatchTail 
+install/x86_64-linux/include/ldmx/data/server/SvtBatchTail.hh:338:inline uint32_t SvtBatchTail::addWidth (uint8_t width)
+install/x86_64-linux/include/ldmx/data/server/SvtBatchTail.hh:361:inline uint32_t SvtBatchTail::addRsvd (uint8_t rsvd)
+grep: install/x86_64-linux/bin/LdmxBuilderServer: binary file matches
+grep: install/x86_64-linux/bin/LdmxBatchTest: binary file matches
+grep: install/x86_64-linux/bin/LdmxBuilder: binary file matches
+grep: build/x86_64-linux/Release/ldmx/data/ptd/CMakeFiles/LdmxBatchTest.dir/LdmxBatchTest.cc.o: binary file matches
+build/x86_64-linux/Release/ldmx/data/ptd/CMakeFiles/LdmxBatchTest.dir/LdmxBatchTest.cc.o.d:167: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/server/SvtGenerator.hh \
+build/x86_64-linux/Release/ldmx/data/ptd/CMakeFiles/LdmxBatchTest.dir/LdmxBatchTest.cc.o.d:169: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/server/SvtBatch.hh \
+build/x86_64-linux/Release/ldmx/data/ptd/CMakeFiles/LdmxBatchTest.dir/LdmxBatchTest.cc.o.d:177: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/client/SvtBatch.hh \
+build/x86_64-linux/Release/ldmx/data/ptd/CMakeFiles/LdmxBatchTest.dir/LdmxBatchTest.cc.o.d:178: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/client/SvtEvent.hh \
+build/x86_64-linux/Release/ldmx/data/ptd/CMakeFiles/LdmxBatchTest.dir/LdmxBatchTest.cc.o.d:179: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/client/SvtHeader.hh \
+build/x86_64-linux/Release/ldmx/data/ptd/CMakeFiles/LdmxBatchTest.dir/LdmxBatchTest.cc.o.d:180: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/common/SvtHeader.hh \
+build/x86_64-linux/Release/ldmx/data/ptd/CMakeFiles/LdmxBatchTest.dir/LdmxBatchTest.cc.o.d:182: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/client/SvtMultiSample.hh \
+build/x86_64-linux/Release/ldmx/data/ptd/CMakeFiles/LdmxBatchTest.dir/LdmxBatchTest.cc.o.d:183: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/common/SvtMultiSample.hh \
+build/x86_64-linux/Release/ldmx/data/ptd/CMakeFiles/LdmxBatchTest.dir/LdmxBatchTest.cc.o.d:184: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/client/SvtTrailer.hh \
+build/x86_64-linux/Release/ldmx/data/ptd/CMakeFiles/LdmxBatchTest.dir/LdmxBatchTest.cc.o.d:185: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/common/SvtTrailer.hh \
+build/x86_64-linux/Release/ldmx/data/ptd/CMakeFiles/LdmxBatchTest.dir/LdmxBatchTest.cc.o.d:190: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/client/SvtBatchTail.hh \
+build/x86_64-linux/Release/ldmx/data/ptd/CMakeFiles/LdmxBatchTest.dir/LdmxBatchTest.cc.o.d:191: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/common/SvtBatchTail.hh \
+grep: build/x86_64-linux/Release/ldmx/data/ptd/LdmxBatchTest: binary file matches
+build/x86_64-linux/Release/ldmx/data/client/Makefile:178:SvtBatch.o: SvtBatch.cc.o
+build/x86_64-linux/Release/ldmx/data/client/Makefile:179:.PHONY : SvtBatch.o
+build/x86_64-linux/Release/ldmx/data/client/Makefile:182:SvtBatch.cc.o:
+build/x86_64-linux/Release/ldmx/data/client/Makefile:183:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.o
+build/x86_64-linux/Release/ldmx/data/client/Makefile:184:.PHONY : SvtBatch.cc.o
+build/x86_64-linux/Release/ldmx/data/client/Makefile:186:SvtBatch.i: SvtBatch.cc.i
+build/x86_64-linux/Release/ldmx/data/client/Makefile:187:.PHONY : SvtBatch.i
+build/x86_64-linux/Release/ldmx/data/client/Makefile:190:SvtBatch.cc.i:
+build/x86_64-linux/Release/ldmx/data/client/Makefile:191:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.i
+build/x86_64-linux/Release/ldmx/data/client/Makefile:192:.PHONY : SvtBatch.cc.i
+build/x86_64-linux/Release/ldmx/data/client/Makefile:194:SvtBatch.s: SvtBatch.cc.s
+build/x86_64-linux/Release/ldmx/data/client/Makefile:195:.PHONY : SvtBatch.s
+build/x86_64-linux/Release/ldmx/data/client/Makefile:198:SvtBatch.cc.s:
+build/x86_64-linux/Release/ldmx/data/client/Makefile:199:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.s
+build/x86_64-linux/Release/ldmx/data/client/Makefile:200:.PHONY : SvtBatch.cc.s
+build/x86_64-linux/Release/ldmx/data/client/Makefile:202:SvtBatchHeader.o: SvtBatchHeader.cc.o
+build/x86_64-linux/Release/ldmx/data/client/Makefile:203:.PHONY : SvtBatchHeader.o
+build/x86_64-linux/Release/ldmx/data/client/Makefile:206:SvtBatchHeader.cc.o:
+build/x86_64-linux/Release/ldmx/data/client/Makefile:207:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchHeader.cc.o
+build/x86_64-linux/Release/ldmx/data/client/Makefile:208:.PHONY : SvtBatchHeader.cc.o
+build/x86_64-linux/Release/ldmx/data/client/Makefile:210:SvtBatchHeader.i: SvtBatchHeader.cc.i
+build/x86_64-linux/Release/ldmx/data/client/Makefile:211:.PHONY : SvtBatchHeader.i
+build/x86_64-linux/Release/ldmx/data/client/Makefile:214:SvtBatchHeader.cc.i:
+build/x86_64-linux/Release/ldmx/data/client/Makefile:215:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchHeader.cc.i
+build/x86_64-linux/Release/ldmx/data/client/Makefile:216:.PHONY : SvtBatchHeader.cc.i
+build/x86_64-linux/Release/ldmx/data/client/Makefile:218:SvtBatchHeader.s: SvtBatchHeader.cc.s
+build/x86_64-linux/Release/ldmx/data/client/Makefile:219:.PHONY : SvtBatchHeader.s
+build/x86_64-linux/Release/ldmx/data/client/Makefile:222:SvtBatchHeader.cc.s:
+build/x86_64-linux/Release/ldmx/data/client/Makefile:223:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchHeader.cc.s
+build/x86_64-linux/Release/ldmx/data/client/Makefile:224:.PHONY : SvtBatchHeader.cc.s
+build/x86_64-linux/Release/ldmx/data/client/Makefile:226:SvtBatchTail.o: SvtBatchTail.cc.o
+build/x86_64-linux/Release/ldmx/data/client/Makefile:227:.PHONY : SvtBatchTail.o
+build/x86_64-linux/Release/ldmx/data/client/Makefile:230:SvtBatchTail.cc.o:
+build/x86_64-linux/Release/ldmx/data/client/Makefile:231:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchTail.cc.o
+build/x86_64-linux/Release/ldmx/data/client/Makefile:232:.PHONY : SvtBatchTail.cc.o
+build/x86_64-linux/Release/ldmx/data/client/Makefile:234:SvtBatchTail.i: SvtBatchTail.cc.i
+build/x86_64-linux/Release/ldmx/data/client/Makefile:235:.PHONY : SvtBatchTail.i
+build/x86_64-linux/Release/ldmx/data/client/Makefile:238:SvtBatchTail.cc.i:
+build/x86_64-linux/Release/ldmx/data/client/Makefile:239:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchTail.cc.i
+build/x86_64-linux/Release/ldmx/data/client/Makefile:240:.PHONY : SvtBatchTail.cc.i
+build/x86_64-linux/Release/ldmx/data/client/Makefile:242:SvtBatchTail.s: SvtBatchTail.cc.s
+build/x86_64-linux/Release/ldmx/data/client/Makefile:243:.PHONY : SvtBatchTail.s
+build/x86_64-linux/Release/ldmx/data/client/Makefile:246:SvtBatchTail.cc.s:
+build/x86_64-linux/Release/ldmx/data/client/Makefile:247:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchTail.cc.s
+build/x86_64-linux/Release/ldmx/data/client/Makefile:248:.PHONY : SvtBatchTail.cc.s
+build/x86_64-linux/Release/ldmx/data/client/Makefile:250:SvtEvent.o: SvtEvent.cc.o
+build/x86_64-linux/Release/ldmx/data/client/Makefile:251:.PHONY : SvtEvent.o
+build/x86_64-linux/Release/ldmx/data/client/Makefile:254:SvtEvent.cc.o:
+build/x86_64-linux/Release/ldmx/data/client/Makefile:255:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtEvent.cc.o
+build/x86_64-linux/Release/ldmx/data/client/Makefile:256:.PHONY : SvtEvent.cc.o
+build/x86_64-linux/Release/ldmx/data/client/Makefile:258:SvtEvent.i: SvtEvent.cc.i
+build/x86_64-linux/Release/ldmx/data/client/Makefile:259:.PHONY : SvtEvent.i
+build/x86_64-linux/Release/ldmx/data/client/Makefile:262:SvtEvent.cc.i:
+build/x86_64-linux/Release/ldmx/data/client/Makefile:263:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtEvent.cc.i
+build/x86_64-linux/Release/ldmx/data/client/Makefile:264:.PHONY : SvtEvent.cc.i
+build/x86_64-linux/Release/ldmx/data/client/Makefile:266:SvtEvent.s: SvtEvent.cc.s
+build/x86_64-linux/Release/ldmx/data/client/Makefile:267:.PHONY : SvtEvent.s
+build/x86_64-linux/Release/ldmx/data/client/Makefile:270:SvtEvent.cc.s:
+build/x86_64-linux/Release/ldmx/data/client/Makefile:271:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtEvent.cc.s
+build/x86_64-linux/Release/ldmx/data/client/Makefile:272:.PHONY : SvtEvent.cc.s
+build/x86_64-linux/Release/ldmx/data/client/Makefile:274:SvtHeader.o: SvtHeader.cc.o
+build/x86_64-linux/Release/ldmx/data/client/Makefile:275:.PHONY : SvtHeader.o
+build/x86_64-linux/Release/ldmx/data/client/Makefile:278:SvtHeader.cc.o:
+build/x86_64-linux/Release/ldmx/data/client/Makefile:279:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtHeader.cc.o
+build/x86_64-linux/Release/ldmx/data/client/Makefile:280:.PHONY : SvtHeader.cc.o
+build/x86_64-linux/Release/ldmx/data/client/Makefile:282:SvtHeader.i: SvtHeader.cc.i
+build/x86_64-linux/Release/ldmx/data/client/Makefile:283:.PHONY : SvtHeader.i
+build/x86_64-linux/Release/ldmx/data/client/Makefile:286:SvtHeader.cc.i:
+build/x86_64-linux/Release/ldmx/data/client/Makefile:287:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtHeader.cc.i
+build/x86_64-linux/Release/ldmx/data/client/Makefile:288:.PHONY : SvtHeader.cc.i
+build/x86_64-linux/Release/ldmx/data/client/Makefile:290:SvtHeader.s: SvtHeader.cc.s
+build/x86_64-linux/Release/ldmx/data/client/Makefile:291:.PHONY : SvtHeader.s
+build/x86_64-linux/Release/ldmx/data/client/Makefile:294:SvtHeader.cc.s:
+build/x86_64-linux/Release/ldmx/data/client/Makefile:295:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtHeader.cc.s
+build/x86_64-linux/Release/ldmx/data/client/Makefile:296:.PHONY : SvtHeader.cc.s
+build/x86_64-linux/Release/ldmx/data/client/Makefile:298:SvtMultiSample.o: SvtMultiSample.cc.o
+build/x86_64-linux/Release/ldmx/data/client/Makefile:299:.PHONY : SvtMultiSample.o
+build/x86_64-linux/Release/ldmx/data/client/Makefile:302:SvtMultiSample.cc.o:
+build/x86_64-linux/Release/ldmx/data/client/Makefile:303:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtMultiSample.cc.o
+build/x86_64-linux/Release/ldmx/data/client/Makefile:304:.PHONY : SvtMultiSample.cc.o
+build/x86_64-linux/Release/ldmx/data/client/Makefile:306:SvtMultiSample.i: SvtMultiSample.cc.i
+build/x86_64-linux/Release/ldmx/data/client/Makefile:307:.PHONY : SvtMultiSample.i
+build/x86_64-linux/Release/ldmx/data/client/Makefile:310:SvtMultiSample.cc.i:
+build/x86_64-linux/Release/ldmx/data/client/Makefile:311:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtMultiSample.cc.i
+build/x86_64-linux/Release/ldmx/data/client/Makefile:312:.PHONY : SvtMultiSample.cc.i
+build/x86_64-linux/Release/ldmx/data/client/Makefile:314:SvtMultiSample.s: SvtMultiSample.cc.s
+build/x86_64-linux/Release/ldmx/data/client/Makefile:315:.PHONY : SvtMultiSample.s
+build/x86_64-linux/Release/ldmx/data/client/Makefile:318:SvtMultiSample.cc.s:
+build/x86_64-linux/Release/ldmx/data/client/Makefile:319:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtMultiSample.cc.s
+build/x86_64-linux/Release/ldmx/data/client/Makefile:320:.PHONY : SvtMultiSample.cc.s
+build/x86_64-linux/Release/ldmx/data/client/Makefile:322:SvtTrailer.o: SvtTrailer.cc.o
+build/x86_64-linux/Release/ldmx/data/client/Makefile:323:.PHONY : SvtTrailer.o
+build/x86_64-linux/Release/ldmx/data/client/Makefile:326:SvtTrailer.cc.o:
+build/x86_64-linux/Release/ldmx/data/client/Makefile:327:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtTrailer.cc.o
+build/x86_64-linux/Release/ldmx/data/client/Makefile:328:.PHONY : SvtTrailer.cc.o
+build/x86_64-linux/Release/ldmx/data/client/Makefile:330:SvtTrailer.i: SvtTrailer.cc.i
+build/x86_64-linux/Release/ldmx/data/client/Makefile:331:.PHONY : SvtTrailer.i
+build/x86_64-linux/Release/ldmx/data/client/Makefile:334:SvtTrailer.cc.i:
+build/x86_64-linux/Release/ldmx/data/client/Makefile:335:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtTrailer.cc.i
+build/x86_64-linux/Release/ldmx/data/client/Makefile:336:.PHONY : SvtTrailer.cc.i
+build/x86_64-linux/Release/ldmx/data/client/Makefile:338:SvtTrailer.s: SvtTrailer.cc.s
+build/x86_64-linux/Release/ldmx/data/client/Makefile:339:.PHONY : SvtTrailer.s
+build/x86_64-linux/Release/ldmx/data/client/Makefile:342:SvtTrailer.cc.s:
+build/x86_64-linux/Release/ldmx/data/client/Makefile:343:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtTrailer.cc.s
+build/x86_64-linux/Release/ldmx/data/client/Makefile:344:.PHONY : SvtTrailer.cc.s
+build/x86_64-linux/Release/ldmx/data/client/Makefile:359:	@echo "... SvtBatch.o"
+build/x86_64-linux/Release/ldmx/data/client/Makefile:360:	@echo "... SvtBatch.i"
+build/x86_64-linux/Release/ldmx/data/client/Makefile:361:	@echo "... SvtBatch.s"
+build/x86_64-linux/Release/ldmx/data/client/Makefile:362:	@echo "... SvtBatchHeader.o"
+build/x86_64-linux/Release/ldmx/data/client/Makefile:363:	@echo "... SvtBatchHeader.i"
+build/x86_64-linux/Release/ldmx/data/client/Makefile:364:	@echo "... SvtBatchHeader.s"
+build/x86_64-linux/Release/ldmx/data/client/Makefile:365:	@echo "... SvtBatchTail.o"
+build/x86_64-linux/Release/ldmx/data/client/Makefile:366:	@echo "... SvtBatchTail.i"
+build/x86_64-linux/Release/ldmx/data/client/Makefile:367:	@echo "... SvtBatchTail.s"
+build/x86_64-linux/Release/ldmx/data/client/Makefile:368:	@echo "... SvtEvent.o"
+build/x86_64-linux/Release/ldmx/data/client/Makefile:369:	@echo "... SvtEvent.i"
+build/x86_64-linux/Release/ldmx/data/client/Makefile:370:	@echo "... SvtEvent.s"
+build/x86_64-linux/Release/ldmx/data/client/Makefile:371:	@echo "... SvtHeader.o"
+build/x86_64-linux/Release/ldmx/data/client/Makefile:372:	@echo "... SvtHeader.i"
+build/x86_64-linux/Release/ldmx/data/client/Makefile:373:	@echo "... SvtHeader.s"
+build/x86_64-linux/Release/ldmx/data/client/Makefile:374:	@echo "... SvtMultiSample.o"
+build/x86_64-linux/Release/ldmx/data/client/Makefile:375:	@echo "... SvtMultiSample.i"
+build/x86_64-linux/Release/ldmx/data/client/Makefile:376:	@echo "... SvtMultiSample.s"
+build/x86_64-linux/Release/ldmx/data/client/Makefile:377:	@echo "... SvtTrailer.o"
+build/x86_64-linux/Release/ldmx/data/client/Makefile:378:	@echo "... SvtTrailer.i"
+build/x86_64-linux/Release/ldmx/data/client/Makefile:379:	@echo "... SvtTrailer.s"
+grep: build/x86_64-linux/Release/ldmx/data/client/libldmx-data-client.so.0.0.0: binary file matches
+grep: build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchTail.cc.o: binary file matches
+grep: build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtMultiSample.cc.o: binary file matches
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/DependInfo.cmake:11:  "/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtBatch.cc" "ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.o" "gcc" "ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.o.d"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/DependInfo.cmake:12:  "/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtBatchHeader.cc" "ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchHeader.cc.o" "gcc" "ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchHeader.cc.o.d"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/DependInfo.cmake:13:  "/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtBatchTail.cc" "ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchTail.cc.o" "gcc" "ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchTail.cc.o.d"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/DependInfo.cmake:14:  "/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtEvent.cc" "ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtEvent.cc.o" "gcc" "ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtEvent.cc.o.d"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/DependInfo.cmake:15:  "/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtHeader.cc" "ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtHeader.cc.o" "gcc" "ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtHeader.cc.o.d"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/DependInfo.cmake:16:  "/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtMultiSample.cc" "ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtMultiSample.cc.o" "gcc" "ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtMultiSample.cc.o.d"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/DependInfo.cmake:17:  "/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtTrailer.cc" "ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtTrailer.cc.o" "gcc" "ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtTrailer.cc.o.d"
+grep: build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchHeader.cc.o: binary file matches
+grep: build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtHeader.cc.o: binary file matches
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/link.txt:1:/usr/bin/c++ -fPIC -O3 -DNDEBUG -shared -Wl,-soname,libldmx-data-client.so.0 -o libldmx-data-client.so.0.0.0 CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.o CMakeFiles/ldmx-data-client.dir/SvtBatchHeader.cc.o CMakeFiles/ldmx-data-client.dir/SvtBatchTail.cc.o CMakeFiles/ldmx-data-client.dir/SvtEvent.cc.o CMakeFiles/ldmx-data-client.dir/SvtHeader.cc.o CMakeFiles/ldmx-data-client.dir/SvtMultiSample.cc.o CMakeFiles/ldmx-data-client.dir/SvtTrailer.cc.o   -L/sdf/home/s/smidd/miniforge3/envs/rogue_tag/lib 
+grep: build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtEvent.cc.o: binary file matches
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtTrailer.cc.o.d:1:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtTrailer.cc.o: \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtTrailer.cc.o.d:2: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtTrailer.cc \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtTrailer.cc.o.d:4: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/client/SvtTrailer.hh \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtTrailer.cc.o.d:5: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/common/SvtTrailer.hh \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtEvent.cc.o.d:1:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtEvent.cc.o: \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtEvent.cc.o.d:2: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtEvent.cc \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtEvent.cc.o.d:4: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/client/SvtEvent.hh \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtEvent.cc.o.d:26: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/client/SvtHeader.hh \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtEvent.cc.o.d:27: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/common/SvtHeader.hh \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtEvent.cc.o.d:29: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/client/SvtMultiSample.hh \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtEvent.cc.o.d:30: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/common/SvtMultiSample.hh \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtEvent.cc.o.d:46: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/client/SvtTrailer.hh \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtEvent.cc.o.d:47: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/common/SvtTrailer.hh
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/cmake_clean.cmake:2:  "CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.o"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/cmake_clean.cmake:3:  "CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.o.d"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/cmake_clean.cmake:4:  "CMakeFiles/ldmx-data-client.dir/SvtBatchHeader.cc.o"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/cmake_clean.cmake:5:  "CMakeFiles/ldmx-data-client.dir/SvtBatchHeader.cc.o.d"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/cmake_clean.cmake:6:  "CMakeFiles/ldmx-data-client.dir/SvtBatchTail.cc.o"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/cmake_clean.cmake:7:  "CMakeFiles/ldmx-data-client.dir/SvtBatchTail.cc.o.d"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/cmake_clean.cmake:8:  "CMakeFiles/ldmx-data-client.dir/SvtEvent.cc.o"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/cmake_clean.cmake:9:  "CMakeFiles/ldmx-data-client.dir/SvtEvent.cc.o.d"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/cmake_clean.cmake:10:  "CMakeFiles/ldmx-data-client.dir/SvtHeader.cc.o"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/cmake_clean.cmake:11:  "CMakeFiles/ldmx-data-client.dir/SvtHeader.cc.o.d"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/cmake_clean.cmake:12:  "CMakeFiles/ldmx-data-client.dir/SvtMultiSample.cc.o"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/cmake_clean.cmake:13:  "CMakeFiles/ldmx-data-client.dir/SvtMultiSample.cc.o.d"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/cmake_clean.cmake:14:  "CMakeFiles/ldmx-data-client.dir/SvtTrailer.cc.o"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/cmake_clean.cmake:15:  "CMakeFiles/ldmx-data-client.dir/SvtTrailer.cc.o.d"
+grep: build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtTrailer.cc.o: binary file matches
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchTail.cc.o.d:1:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchTail.cc.o: \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchTail.cc.o.d:2: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtBatchTail.cc \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchTail.cc.o.d:4: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/client/SvtBatchTail.hh \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchTail.cc.o.d:5: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/common/SvtBatchTail.hh \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchHeader.cc.o.d:1:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchHeader.cc.o: \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchHeader.cc.o.d:2: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtBatchHeader.cc \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchHeader.cc.o.d:4: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/client/SvtBatchHeader.hh \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchHeader.cc.o.d:5: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/common/SvtBatchHeader.hh \
+grep: build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.o: binary file matches
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtMultiSample.cc.o.d:1:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtMultiSample.cc.o: \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtMultiSample.cc.o.d:2: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtMultiSample.cc \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtMultiSample.cc.o.d:4: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/client/SvtMultiSample.hh \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtMultiSample.cc.o.d:5: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/common/SvtMultiSample.hh \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.o.d:1:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.o: \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.o.d:2: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtBatch.cc \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.o.d:4: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/client/SvtBatch.hh \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.o.d:5: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/client/SvtEvent.hh \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.o.d:27: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/client/SvtHeader.hh \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.o.d:28: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/common/SvtHeader.hh \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.o.d:30: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/client/SvtMultiSample.hh \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.o.d:31: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/common/SvtMultiSample.hh \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.o.d:47: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/client/SvtTrailer.hh \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.o.d:48: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/common/SvtTrailer.hh \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.o.d:80: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/client/SvtBatchTail.hh \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.o.d:81: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/common/SvtBatchTail.hh \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.o.d:82: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/client/SvtBatchHeader.hh \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.o.d:83: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/common/SvtBatchHeader.hh
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:72:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.o: ldmx/data/client/CMakeFiles/ldmx-data-client.dir/flags.make
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:73:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.o: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtBatch.cc
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:74:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.o: ldmx/data/client/CMakeFiles/ldmx-data-client.dir/compiler_depend.ts
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:75:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.o"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:76:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/client && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.o -MF CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.o.d -o CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.o -c /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtBatch.cc
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:78:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.i: cmake_force
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:79:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.i"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:80:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/client && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtBatch.cc > CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.i
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:82:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.s: cmake_force
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:83:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.s"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:84:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/client && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtBatch.cc -o CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.s
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:86:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchHeader.cc.o: ldmx/data/client/CMakeFiles/ldmx-data-client.dir/flags.make
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:87:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchHeader.cc.o: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtBatchHeader.cc
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:88:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchHeader.cc.o: ldmx/data/client/CMakeFiles/ldmx-data-client.dir/compiler_depend.ts
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:89:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchHeader.cc.o"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:90:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/client && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchHeader.cc.o -MF CMakeFiles/ldmx-data-client.dir/SvtBatchHeader.cc.o.d -o CMakeFiles/ldmx-data-client.dir/SvtBatchHeader.cc.o -c /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtBatchHeader.cc
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:92:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchHeader.cc.i: cmake_force
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:93:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ldmx-data-client.dir/SvtBatchHeader.cc.i"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:94:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/client && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtBatchHeader.cc > CMakeFiles/ldmx-data-client.dir/SvtBatchHeader.cc.i
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:96:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchHeader.cc.s: cmake_force
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:97:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ldmx-data-client.dir/SvtBatchHeader.cc.s"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:98:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/client && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtBatchHeader.cc -o CMakeFiles/ldmx-data-client.dir/SvtBatchHeader.cc.s
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:100:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchTail.cc.o: ldmx/data/client/CMakeFiles/ldmx-data-client.dir/flags.make
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:101:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchTail.cc.o: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtBatchTail.cc
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:102:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchTail.cc.o: ldmx/data/client/CMakeFiles/ldmx-data-client.dir/compiler_depend.ts
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:103:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchTail.cc.o"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:104:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/client && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchTail.cc.o -MF CMakeFiles/ldmx-data-client.dir/SvtBatchTail.cc.o.d -o CMakeFiles/ldmx-data-client.dir/SvtBatchTail.cc.o -c /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtBatchTail.cc
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:106:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchTail.cc.i: cmake_force
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:107:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ldmx-data-client.dir/SvtBatchTail.cc.i"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:108:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/client && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtBatchTail.cc > CMakeFiles/ldmx-data-client.dir/SvtBatchTail.cc.i
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:110:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchTail.cc.s: cmake_force
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:111:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ldmx-data-client.dir/SvtBatchTail.cc.s"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:112:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/client && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtBatchTail.cc -o CMakeFiles/ldmx-data-client.dir/SvtBatchTail.cc.s
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:114:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtEvent.cc.o: ldmx/data/client/CMakeFiles/ldmx-data-client.dir/flags.make
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:115:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtEvent.cc.o: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtEvent.cc
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:116:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtEvent.cc.o: ldmx/data/client/CMakeFiles/ldmx-data-client.dir/compiler_depend.ts
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:117:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtEvent.cc.o"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:118:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/client && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtEvent.cc.o -MF CMakeFiles/ldmx-data-client.dir/SvtEvent.cc.o.d -o CMakeFiles/ldmx-data-client.dir/SvtEvent.cc.o -c /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtEvent.cc
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:120:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtEvent.cc.i: cmake_force
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:121:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ldmx-data-client.dir/SvtEvent.cc.i"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:122:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/client && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtEvent.cc > CMakeFiles/ldmx-data-client.dir/SvtEvent.cc.i
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:124:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtEvent.cc.s: cmake_force
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:125:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ldmx-data-client.dir/SvtEvent.cc.s"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:126:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/client && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtEvent.cc -o CMakeFiles/ldmx-data-client.dir/SvtEvent.cc.s
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:128:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtHeader.cc.o: ldmx/data/client/CMakeFiles/ldmx-data-client.dir/flags.make
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:129:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtHeader.cc.o: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtHeader.cc
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:130:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtHeader.cc.o: ldmx/data/client/CMakeFiles/ldmx-data-client.dir/compiler_depend.ts
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:131:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtHeader.cc.o"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:132:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/client && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtHeader.cc.o -MF CMakeFiles/ldmx-data-client.dir/SvtHeader.cc.o.d -o CMakeFiles/ldmx-data-client.dir/SvtHeader.cc.o -c /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtHeader.cc
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:134:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtHeader.cc.i: cmake_force
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:135:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ldmx-data-client.dir/SvtHeader.cc.i"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:136:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/client && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtHeader.cc > CMakeFiles/ldmx-data-client.dir/SvtHeader.cc.i
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:138:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtHeader.cc.s: cmake_force
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:139:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ldmx-data-client.dir/SvtHeader.cc.s"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:140:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/client && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtHeader.cc -o CMakeFiles/ldmx-data-client.dir/SvtHeader.cc.s
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:142:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtMultiSample.cc.o: ldmx/data/client/CMakeFiles/ldmx-data-client.dir/flags.make
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:143:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtMultiSample.cc.o: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtMultiSample.cc
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:144:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtMultiSample.cc.o: ldmx/data/client/CMakeFiles/ldmx-data-client.dir/compiler_depend.ts
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:145:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtMultiSample.cc.o"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:146:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/client && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtMultiSample.cc.o -MF CMakeFiles/ldmx-data-client.dir/SvtMultiSample.cc.o.d -o CMakeFiles/ldmx-data-client.dir/SvtMultiSample.cc.o -c /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtMultiSample.cc
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:148:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtMultiSample.cc.i: cmake_force
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:149:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ldmx-data-client.dir/SvtMultiSample.cc.i"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:150:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/client && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtMultiSample.cc > CMakeFiles/ldmx-data-client.dir/SvtMultiSample.cc.i
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:152:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtMultiSample.cc.s: cmake_force
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:153:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ldmx-data-client.dir/SvtMultiSample.cc.s"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:154:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/client && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtMultiSample.cc -o CMakeFiles/ldmx-data-client.dir/SvtMultiSample.cc.s
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:156:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtTrailer.cc.o: ldmx/data/client/CMakeFiles/ldmx-data-client.dir/flags.make
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:157:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtTrailer.cc.o: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtTrailer.cc
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:158:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtTrailer.cc.o: ldmx/data/client/CMakeFiles/ldmx-data-client.dir/compiler_depend.ts
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:159:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtTrailer.cc.o"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:160:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/client && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtTrailer.cc.o -MF CMakeFiles/ldmx-data-client.dir/SvtTrailer.cc.o.d -o CMakeFiles/ldmx-data-client.dir/SvtTrailer.cc.o -c /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtTrailer.cc
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:162:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtTrailer.cc.i: cmake_force
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:163:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ldmx-data-client.dir/SvtTrailer.cc.i"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:164:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/client && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtTrailer.cc > CMakeFiles/ldmx-data-client.dir/SvtTrailer.cc.i
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:166:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtTrailer.cc.s: cmake_force
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:167:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ldmx-data-client.dir/SvtTrailer.cc.s"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:168:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/client && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtTrailer.cc -o CMakeFiles/ldmx-data-client.dir/SvtTrailer.cc.s
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:172:"CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.o" \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:173:"CMakeFiles/ldmx-data-client.dir/SvtBatchHeader.cc.o" \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:174:"CMakeFiles/ldmx-data-client.dir/SvtBatchTail.cc.o" \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:175:"CMakeFiles/ldmx-data-client.dir/SvtEvent.cc.o" \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:176:"CMakeFiles/ldmx-data-client.dir/SvtHeader.cc.o" \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:177:"CMakeFiles/ldmx-data-client.dir/SvtMultiSample.cc.o" \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:178:"CMakeFiles/ldmx-data-client.dir/SvtTrailer.cc.o"
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:183:ldmx/data/client/libldmx-data-client.so.0.0.0: ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatch.cc.o
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:184:ldmx/data/client/libldmx-data-client.so.0.0.0: ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchHeader.cc.o
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:185:ldmx/data/client/libldmx-data-client.so.0.0.0: ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtBatchTail.cc.o
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:186:ldmx/data/client/libldmx-data-client.so.0.0.0: ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtEvent.cc.o
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:187:ldmx/data/client/libldmx-data-client.so.0.0.0: ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtHeader.cc.o
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:188:ldmx/data/client/libldmx-data-client.so.0.0.0: ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtMultiSample.cc.o
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/build.make:189:ldmx/data/client/libldmx-data-client.so.0.0.0: ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtTrailer.cc.o
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtHeader.cc.o.d:1:ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtHeader.cc.o: \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtHeader.cc.o.d:2: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/client/SvtHeader.cc \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtHeader.cc.o.d:4: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/client/SvtHeader.hh \
+build/x86_64-linux/Release/ldmx/data/client/CMakeFiles/ldmx-data-client.dir/SvtHeader.cc.o.d:5: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/common/SvtHeader.hh \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtTrailer.cc.o.d:1:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtTrailer.cc.o: \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtTrailer.cc.o.d:2: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtTrailer.cc \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtTrailer.cc.o.d:4: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/server/SvtTrailer.hh \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtTrailer.cc.o.d:5: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/common/SvtTrailer.hh \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtTrailer.cc.o.d:28: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/server/SvtEvent.hh \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtTrailer.cc.o.d:44: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/server/SvtBatch.hh \
+grep: build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtTrailer.cc.o: binary file matches
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatch.cc.o.d:1:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatch.cc.o: \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatch.cc.o.d:2: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtBatch.cc \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatch.cc.o.d:4: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/server/SvtBatch.hh \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:72:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatch.cc.o: ldmx/data/server/CMakeFiles/ldmx-data-server.dir/flags.make
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:73:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatch.cc.o: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtBatch.cc
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:74:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatch.cc.o: ldmx/data/server/CMakeFiles/ldmx-data-server.dir/compiler_depend.ts
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:75:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatch.cc.o"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:76:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatch.cc.o -MF CMakeFiles/ldmx-data-server.dir/SvtBatch.cc.o.d -o CMakeFiles/ldmx-data-server.dir/SvtBatch.cc.o -c /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtBatch.cc
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:78:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatch.cc.i: cmake_force
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:79:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ldmx-data-server.dir/SvtBatch.cc.i"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:80:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtBatch.cc > CMakeFiles/ldmx-data-server.dir/SvtBatch.cc.i
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:82:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatch.cc.s: cmake_force
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:83:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ldmx-data-server.dir/SvtBatch.cc.s"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:84:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtBatch.cc -o CMakeFiles/ldmx-data-server.dir/SvtBatch.cc.s
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:86:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchHeader.cc.o: ldmx/data/server/CMakeFiles/ldmx-data-server.dir/flags.make
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:87:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchHeader.cc.o: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtBatchHeader.cc
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:88:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchHeader.cc.o: ldmx/data/server/CMakeFiles/ldmx-data-server.dir/compiler_depend.ts
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:89:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchHeader.cc.o"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:90:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchHeader.cc.o -MF CMakeFiles/ldmx-data-server.dir/SvtBatchHeader.cc.o.d -o CMakeFiles/ldmx-data-server.dir/SvtBatchHeader.cc.o -c /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtBatchHeader.cc
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:92:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchHeader.cc.i: cmake_force
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:93:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ldmx-data-server.dir/SvtBatchHeader.cc.i"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:94:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtBatchHeader.cc > CMakeFiles/ldmx-data-server.dir/SvtBatchHeader.cc.i
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:96:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchHeader.cc.s: cmake_force
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:97:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ldmx-data-server.dir/SvtBatchHeader.cc.s"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:98:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtBatchHeader.cc -o CMakeFiles/ldmx-data-server.dir/SvtBatchHeader.cc.s
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:100:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchTail.cc.o: ldmx/data/server/CMakeFiles/ldmx-data-server.dir/flags.make
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:101:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchTail.cc.o: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtBatchTail.cc
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:102:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchTail.cc.o: ldmx/data/server/CMakeFiles/ldmx-data-server.dir/compiler_depend.ts
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:103:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchTail.cc.o"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:104:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchTail.cc.o -MF CMakeFiles/ldmx-data-server.dir/SvtBatchTail.cc.o.d -o CMakeFiles/ldmx-data-server.dir/SvtBatchTail.cc.o -c /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtBatchTail.cc
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:106:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchTail.cc.i: cmake_force
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:107:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ldmx-data-server.dir/SvtBatchTail.cc.i"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:108:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtBatchTail.cc > CMakeFiles/ldmx-data-server.dir/SvtBatchTail.cc.i
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:110:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchTail.cc.s: cmake_force
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:111:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ldmx-data-server.dir/SvtBatchTail.cc.s"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:112:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtBatchTail.cc -o CMakeFiles/ldmx-data-server.dir/SvtBatchTail.cc.s
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:114:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtEvent.cc.o: ldmx/data/server/CMakeFiles/ldmx-data-server.dir/flags.make
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:115:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtEvent.cc.o: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtEvent.cc
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:116:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtEvent.cc.o: ldmx/data/server/CMakeFiles/ldmx-data-server.dir/compiler_depend.ts
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:117:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtEvent.cc.o"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:118:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtEvent.cc.o -MF CMakeFiles/ldmx-data-server.dir/SvtEvent.cc.o.d -o CMakeFiles/ldmx-data-server.dir/SvtEvent.cc.o -c /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtEvent.cc
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:120:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtEvent.cc.i: cmake_force
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:121:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ldmx-data-server.dir/SvtEvent.cc.i"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:122:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtEvent.cc > CMakeFiles/ldmx-data-server.dir/SvtEvent.cc.i
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:124:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtEvent.cc.s: cmake_force
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:125:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ldmx-data-server.dir/SvtEvent.cc.s"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:126:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtEvent.cc -o CMakeFiles/ldmx-data-server.dir/SvtEvent.cc.s
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:128:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtHeader.cc.o: ldmx/data/server/CMakeFiles/ldmx-data-server.dir/flags.make
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:129:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtHeader.cc.o: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtHeader.cc
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:130:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtHeader.cc.o: ldmx/data/server/CMakeFiles/ldmx-data-server.dir/compiler_depend.ts
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:131:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtHeader.cc.o"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:132:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtHeader.cc.o -MF CMakeFiles/ldmx-data-server.dir/SvtHeader.cc.o.d -o CMakeFiles/ldmx-data-server.dir/SvtHeader.cc.o -c /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtHeader.cc
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:134:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtHeader.cc.i: cmake_force
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:135:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ldmx-data-server.dir/SvtHeader.cc.i"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:136:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtHeader.cc > CMakeFiles/ldmx-data-server.dir/SvtHeader.cc.i
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:138:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtHeader.cc.s: cmake_force
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:139:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ldmx-data-server.dir/SvtHeader.cc.s"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:140:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtHeader.cc -o CMakeFiles/ldmx-data-server.dir/SvtHeader.cc.s
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:142:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtMultiSample.cc.o: ldmx/data/server/CMakeFiles/ldmx-data-server.dir/flags.make
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:143:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtMultiSample.cc.o: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtMultiSample.cc
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:144:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtMultiSample.cc.o: ldmx/data/server/CMakeFiles/ldmx-data-server.dir/compiler_depend.ts
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:145:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtMultiSample.cc.o"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:146:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtMultiSample.cc.o -MF CMakeFiles/ldmx-data-server.dir/SvtMultiSample.cc.o.d -o CMakeFiles/ldmx-data-server.dir/SvtMultiSample.cc.o -c /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtMultiSample.cc
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:148:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtMultiSample.cc.i: cmake_force
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:149:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ldmx-data-server.dir/SvtMultiSample.cc.i"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:150:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtMultiSample.cc > CMakeFiles/ldmx-data-server.dir/SvtMultiSample.cc.i
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:152:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtMultiSample.cc.s: cmake_force
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:153:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ldmx-data-server.dir/SvtMultiSample.cc.s"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:154:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtMultiSample.cc -o CMakeFiles/ldmx-data-server.dir/SvtMultiSample.cc.s
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:156:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtTrailer.cc.o: ldmx/data/server/CMakeFiles/ldmx-data-server.dir/flags.make
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:157:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtTrailer.cc.o: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtTrailer.cc
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:158:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtTrailer.cc.o: ldmx/data/server/CMakeFiles/ldmx-data-server.dir/compiler_depend.ts
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:159:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtTrailer.cc.o"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:160:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtTrailer.cc.o -MF CMakeFiles/ldmx-data-server.dir/SvtTrailer.cc.o.d -o CMakeFiles/ldmx-data-server.dir/SvtTrailer.cc.o -c /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtTrailer.cc
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:162:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtTrailer.cc.i: cmake_force
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:163:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ldmx-data-server.dir/SvtTrailer.cc.i"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:164:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtTrailer.cc > CMakeFiles/ldmx-data-server.dir/SvtTrailer.cc.i
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:166:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtTrailer.cc.s: cmake_force
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:167:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ldmx-data-server.dir/SvtTrailer.cc.s"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:168:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtTrailer.cc -o CMakeFiles/ldmx-data-server.dir/SvtTrailer.cc.s
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:170:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.o: ldmx/data/server/CMakeFiles/ldmx-data-server.dir/flags.make
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:171:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.o: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtGenerator.cc
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:172:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.o: ldmx/data/server/CMakeFiles/ldmx-data-server.dir/compiler_depend.ts
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:173:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.o"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:174:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.o -MF CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.o.d -o CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.o -c /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtGenerator.cc
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:176:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.i: cmake_force
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:177:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.i"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:178:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtGenerator.cc > CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.i
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:180:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.s: cmake_force
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:181:	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.s"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:182:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release/ldmx/data/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtGenerator.cc -o CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.s
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:242:"CMakeFiles/ldmx-data-server.dir/SvtBatch.cc.o" \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:243:"CMakeFiles/ldmx-data-server.dir/SvtBatchHeader.cc.o" \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:244:"CMakeFiles/ldmx-data-server.dir/SvtBatchTail.cc.o" \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:245:"CMakeFiles/ldmx-data-server.dir/SvtEvent.cc.o" \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:246:"CMakeFiles/ldmx-data-server.dir/SvtHeader.cc.o" \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:247:"CMakeFiles/ldmx-data-server.dir/SvtMultiSample.cc.o" \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:248:"CMakeFiles/ldmx-data-server.dir/SvtTrailer.cc.o" \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:249:"CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.o" \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:258:ldmx/data/server/libldmx-data-server.so.0.0.0: ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatch.cc.o
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:259:ldmx/data/server/libldmx-data-server.so.0.0.0: ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchHeader.cc.o
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:260:ldmx/data/server/libldmx-data-server.so.0.0.0: ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchTail.cc.o
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:261:ldmx/data/server/libldmx-data-server.so.0.0.0: ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtEvent.cc.o
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:262:ldmx/data/server/libldmx-data-server.so.0.0.0: ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtHeader.cc.o
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:263:ldmx/data/server/libldmx-data-server.so.0.0.0: ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtMultiSample.cc.o
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:264:ldmx/data/server/libldmx-data-server.so.0.0.0: ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtTrailer.cc.o
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make:265:ldmx/data/server/libldmx-data-server.so.0.0.0: ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.o
+grep: build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtHeader.cc.o: binary file matches
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/cmake_clean.cmake:2:  "CMakeFiles/ldmx-data-server.dir/SvtBatch.cc.o"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/cmake_clean.cmake:3:  "CMakeFiles/ldmx-data-server.dir/SvtBatch.cc.o.d"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/cmake_clean.cmake:4:  "CMakeFiles/ldmx-data-server.dir/SvtBatchHeader.cc.o"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/cmake_clean.cmake:5:  "CMakeFiles/ldmx-data-server.dir/SvtBatchHeader.cc.o.d"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/cmake_clean.cmake:6:  "CMakeFiles/ldmx-data-server.dir/SvtBatchTail.cc.o"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/cmake_clean.cmake:7:  "CMakeFiles/ldmx-data-server.dir/SvtBatchTail.cc.o.d"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/cmake_clean.cmake:8:  "CMakeFiles/ldmx-data-server.dir/SvtEvent.cc.o"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/cmake_clean.cmake:9:  "CMakeFiles/ldmx-data-server.dir/SvtEvent.cc.o.d"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/cmake_clean.cmake:10:  "CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.o"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/cmake_clean.cmake:11:  "CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.o.d"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/cmake_clean.cmake:12:  "CMakeFiles/ldmx-data-server.dir/SvtHeader.cc.o"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/cmake_clean.cmake:13:  "CMakeFiles/ldmx-data-server.dir/SvtHeader.cc.o.d"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/cmake_clean.cmake:14:  "CMakeFiles/ldmx-data-server.dir/SvtMultiSample.cc.o"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/cmake_clean.cmake:15:  "CMakeFiles/ldmx-data-server.dir/SvtMultiSample.cc.o.d"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/cmake_clean.cmake:16:  "CMakeFiles/ldmx-data-server.dir/SvtTrailer.cc.o"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/cmake_clean.cmake:17:  "CMakeFiles/ldmx-data-server.dir/SvtTrailer.cc.o.d"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.o.d:1:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.o: \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.o.d:2: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtGenerator.cc \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.o.d:4: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/server/SvtGenerator.hh \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.o.d:26: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/server/SvtBatch.hh \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.o.d:31: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/server/SvtBatchHeader.hh \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.o.d:32: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/common/SvtBatchHeader.hh \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.o.d:34: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/server/SvtEvent.hh \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.o.d:49: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/server/SvtHeader.hh \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.o.d:50: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/common/SvtHeader.hh \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.o.d:51: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/server/SvtMultiSample.hh \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.o.d:52: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/common/SvtMultiSample.hh \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.o.d:53: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/server/SvtTrailer.hh \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.o.d:54: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/common/SvtTrailer.hh \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.o.d:55: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/server/SvtBatchTail.hh \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.o.d:56: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/common/SvtBatchTail.hh
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtEvent.cc.o.d:1:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtEvent.cc.o: \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtEvent.cc.o.d:2: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtEvent.cc \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtEvent.cc.o.d:4: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/server/SvtEvent.hh \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtEvent.cc.o.d:40: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/server/SvtBatch.hh \
+grep: build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatch.cc.o: binary file matches
+grep: build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.o: binary file matches
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtMultiSample.cc.o.d:1:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtMultiSample.cc.o: \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtMultiSample.cc.o.d:2: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtMultiSample.cc \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtMultiSample.cc.o.d:4: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/server/SvtMultiSample.hh \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtMultiSample.cc.o.d:5: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/common/SvtMultiSample.hh \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtMultiSample.cc.o.d:29: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/server/SvtEvent.hh \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtMultiSample.cc.o.d:45: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/server/SvtBatch.hh \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchTail.cc.o.d:1:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchTail.cc.o: \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchTail.cc.o.d:2: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtBatchTail.cc \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchTail.cc.o.d:4: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/server/SvtBatchTail.hh \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchTail.cc.o.d:5: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/common/SvtBatchTail.hh \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchTail.cc.o.d:29: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/server/SvtBatch.hh \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/DependInfo.cmake:11:  "/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtBatch.cc" "ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatch.cc.o" "gcc" "ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatch.cc.o.d"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/DependInfo.cmake:12:  "/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtBatchHeader.cc" "ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchHeader.cc.o" "gcc" "ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchHeader.cc.o.d"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/DependInfo.cmake:13:  "/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtBatchTail.cc" "ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchTail.cc.o" "gcc" "ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchTail.cc.o.d"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/DependInfo.cmake:14:  "/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtEvent.cc" "ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtEvent.cc.o" "gcc" "ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtEvent.cc.o.d"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/DependInfo.cmake:15:  "/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtGenerator.cc" "ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.o" "gcc" "ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.o.d"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/DependInfo.cmake:16:  "/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtHeader.cc" "ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtHeader.cc.o" "gcc" "ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtHeader.cc.o.d"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/DependInfo.cmake:17:  "/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtMultiSample.cc" "ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtMultiSample.cc.o" "gcc" "ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtMultiSample.cc.o.d"
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/DependInfo.cmake:18:  "/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtTrailer.cc" "ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtTrailer.cc.o" "gcc" "ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtTrailer.cc.o.d"
+grep: build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtMultiSample.cc.o: binary file matches
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtHeader.cc.o.d:1:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtHeader.cc.o: \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtHeader.cc.o.d:2: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtHeader.cc \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtHeader.cc.o.d:4: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/server/SvtHeader.hh \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtHeader.cc.o.d:5: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/common/SvtHeader.hh \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtHeader.cc.o.d:28: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/server/SvtEvent.hh \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtHeader.cc.o.d:44: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/server/SvtBatch.hh \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/link.txt:1:/usr/bin/c++ -fPIC -O3 -DNDEBUG -shared -Wl,-soname,libldmx-data-server.so.0 -o libldmx-data-server.so.0.0.0 CMakeFiles/ldmx-data-server.dir/SvtBatch.cc.o CMakeFiles/ldmx-data-server.dir/SvtBatchHeader.cc.o CMakeFiles/ldmx-data-server.dir/SvtBatchTail.cc.o CMakeFiles/ldmx-data-server.dir/SvtEvent.cc.o CMakeFiles/ldmx-data-server.dir/SvtHeader.cc.o CMakeFiles/ldmx-data-server.dir/SvtMultiSample.cc.o CMakeFiles/ldmx-data-server.dir/SvtTrailer.cc.o CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.o CMakeFiles/ldmx-data-server.dir/TriggerBatch.cc.o CMakeFiles/ldmx-data-server.dir/TriggerHeader.cc.o CMakeFiles/ldmx-data-server.dir/TriggerEvent.cc.o CMakeFiles/ldmx-data-server.dir/TriggerGenerator.cc.o   -L/sdf/home/s/smidd/miniforge3/envs/rogue_tag/lib 
+grep: build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtEvent.cc.o: binary file matches
+grep: build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchTail.cc.o: binary file matches
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchHeader.cc.o.d:1:ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchHeader.cc.o: \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchHeader.cc.o.d:2: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/data/server/SvtBatchHeader.cc \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchHeader.cc.o.d:4: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/server/SvtBatchHeader.hh \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchHeader.cc.o.d:5: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/common/SvtBatchHeader.hh \
+build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchHeader.cc.o.d:29: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/server/SvtBatch.hh \
+grep: build/x86_64-linux/Release/ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchHeader.cc.o: binary file matches
+build/x86_64-linux/Release/ldmx/data/server/Makefile:178:SvtBatch.o: SvtBatch.cc.o
+build/x86_64-linux/Release/ldmx/data/server/Makefile:179:.PHONY : SvtBatch.o
+build/x86_64-linux/Release/ldmx/data/server/Makefile:182:SvtBatch.cc.o:
+build/x86_64-linux/Release/ldmx/data/server/Makefile:183:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatch.cc.o
+build/x86_64-linux/Release/ldmx/data/server/Makefile:184:.PHONY : SvtBatch.cc.o
+build/x86_64-linux/Release/ldmx/data/server/Makefile:186:SvtBatch.i: SvtBatch.cc.i
+build/x86_64-linux/Release/ldmx/data/server/Makefile:187:.PHONY : SvtBatch.i
+build/x86_64-linux/Release/ldmx/data/server/Makefile:190:SvtBatch.cc.i:
+build/x86_64-linux/Release/ldmx/data/server/Makefile:191:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatch.cc.i
+build/x86_64-linux/Release/ldmx/data/server/Makefile:192:.PHONY : SvtBatch.cc.i
+build/x86_64-linux/Release/ldmx/data/server/Makefile:194:SvtBatch.s: SvtBatch.cc.s
+build/x86_64-linux/Release/ldmx/data/server/Makefile:195:.PHONY : SvtBatch.s
+build/x86_64-linux/Release/ldmx/data/server/Makefile:198:SvtBatch.cc.s:
+build/x86_64-linux/Release/ldmx/data/server/Makefile:199:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatch.cc.s
+build/x86_64-linux/Release/ldmx/data/server/Makefile:200:.PHONY : SvtBatch.cc.s
+build/x86_64-linux/Release/ldmx/data/server/Makefile:202:SvtBatchHeader.o: SvtBatchHeader.cc.o
+build/x86_64-linux/Release/ldmx/data/server/Makefile:203:.PHONY : SvtBatchHeader.o
+build/x86_64-linux/Release/ldmx/data/server/Makefile:206:SvtBatchHeader.cc.o:
+build/x86_64-linux/Release/ldmx/data/server/Makefile:207:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchHeader.cc.o
+build/x86_64-linux/Release/ldmx/data/server/Makefile:208:.PHONY : SvtBatchHeader.cc.o
+build/x86_64-linux/Release/ldmx/data/server/Makefile:210:SvtBatchHeader.i: SvtBatchHeader.cc.i
+build/x86_64-linux/Release/ldmx/data/server/Makefile:211:.PHONY : SvtBatchHeader.i
+build/x86_64-linux/Release/ldmx/data/server/Makefile:214:SvtBatchHeader.cc.i:
+build/x86_64-linux/Release/ldmx/data/server/Makefile:215:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchHeader.cc.i
+build/x86_64-linux/Release/ldmx/data/server/Makefile:216:.PHONY : SvtBatchHeader.cc.i
+build/x86_64-linux/Release/ldmx/data/server/Makefile:218:SvtBatchHeader.s: SvtBatchHeader.cc.s
+build/x86_64-linux/Release/ldmx/data/server/Makefile:219:.PHONY : SvtBatchHeader.s
+build/x86_64-linux/Release/ldmx/data/server/Makefile:222:SvtBatchHeader.cc.s:
+build/x86_64-linux/Release/ldmx/data/server/Makefile:223:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchHeader.cc.s
+build/x86_64-linux/Release/ldmx/data/server/Makefile:224:.PHONY : SvtBatchHeader.cc.s
+build/x86_64-linux/Release/ldmx/data/server/Makefile:226:SvtBatchTail.o: SvtBatchTail.cc.o
+build/x86_64-linux/Release/ldmx/data/server/Makefile:227:.PHONY : SvtBatchTail.o
+build/x86_64-linux/Release/ldmx/data/server/Makefile:230:SvtBatchTail.cc.o:
+build/x86_64-linux/Release/ldmx/data/server/Makefile:231:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchTail.cc.o
+build/x86_64-linux/Release/ldmx/data/server/Makefile:232:.PHONY : SvtBatchTail.cc.o
+build/x86_64-linux/Release/ldmx/data/server/Makefile:234:SvtBatchTail.i: SvtBatchTail.cc.i
+build/x86_64-linux/Release/ldmx/data/server/Makefile:235:.PHONY : SvtBatchTail.i
+build/x86_64-linux/Release/ldmx/data/server/Makefile:238:SvtBatchTail.cc.i:
+build/x86_64-linux/Release/ldmx/data/server/Makefile:239:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchTail.cc.i
+build/x86_64-linux/Release/ldmx/data/server/Makefile:240:.PHONY : SvtBatchTail.cc.i
+build/x86_64-linux/Release/ldmx/data/server/Makefile:242:SvtBatchTail.s: SvtBatchTail.cc.s
+build/x86_64-linux/Release/ldmx/data/server/Makefile:243:.PHONY : SvtBatchTail.s
+build/x86_64-linux/Release/ldmx/data/server/Makefile:246:SvtBatchTail.cc.s:
+build/x86_64-linux/Release/ldmx/data/server/Makefile:247:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtBatchTail.cc.s
+build/x86_64-linux/Release/ldmx/data/server/Makefile:248:.PHONY : SvtBatchTail.cc.s
+build/x86_64-linux/Release/ldmx/data/server/Makefile:250:SvtEvent.o: SvtEvent.cc.o
+build/x86_64-linux/Release/ldmx/data/server/Makefile:251:.PHONY : SvtEvent.o
+build/x86_64-linux/Release/ldmx/data/server/Makefile:254:SvtEvent.cc.o:
+build/x86_64-linux/Release/ldmx/data/server/Makefile:255:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtEvent.cc.o
+build/x86_64-linux/Release/ldmx/data/server/Makefile:256:.PHONY : SvtEvent.cc.o
+build/x86_64-linux/Release/ldmx/data/server/Makefile:258:SvtEvent.i: SvtEvent.cc.i
+build/x86_64-linux/Release/ldmx/data/server/Makefile:259:.PHONY : SvtEvent.i
+build/x86_64-linux/Release/ldmx/data/server/Makefile:262:SvtEvent.cc.i:
+build/x86_64-linux/Release/ldmx/data/server/Makefile:263:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtEvent.cc.i
+build/x86_64-linux/Release/ldmx/data/server/Makefile:264:.PHONY : SvtEvent.cc.i
+build/x86_64-linux/Release/ldmx/data/server/Makefile:266:SvtEvent.s: SvtEvent.cc.s
+build/x86_64-linux/Release/ldmx/data/server/Makefile:267:.PHONY : SvtEvent.s
+build/x86_64-linux/Release/ldmx/data/server/Makefile:270:SvtEvent.cc.s:
+build/x86_64-linux/Release/ldmx/data/server/Makefile:271:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtEvent.cc.s
+build/x86_64-linux/Release/ldmx/data/server/Makefile:272:.PHONY : SvtEvent.cc.s
+build/x86_64-linux/Release/ldmx/data/server/Makefile:274:SvtGenerator.o: SvtGenerator.cc.o
+build/x86_64-linux/Release/ldmx/data/server/Makefile:275:.PHONY : SvtGenerator.o
+build/x86_64-linux/Release/ldmx/data/server/Makefile:278:SvtGenerator.cc.o:
+build/x86_64-linux/Release/ldmx/data/server/Makefile:279:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.o
+build/x86_64-linux/Release/ldmx/data/server/Makefile:280:.PHONY : SvtGenerator.cc.o
+build/x86_64-linux/Release/ldmx/data/server/Makefile:282:SvtGenerator.i: SvtGenerator.cc.i
+build/x86_64-linux/Release/ldmx/data/server/Makefile:283:.PHONY : SvtGenerator.i
+build/x86_64-linux/Release/ldmx/data/server/Makefile:286:SvtGenerator.cc.i:
+build/x86_64-linux/Release/ldmx/data/server/Makefile:287:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.i
+build/x86_64-linux/Release/ldmx/data/server/Makefile:288:.PHONY : SvtGenerator.cc.i
+build/x86_64-linux/Release/ldmx/data/server/Makefile:290:SvtGenerator.s: SvtGenerator.cc.s
+build/x86_64-linux/Release/ldmx/data/server/Makefile:291:.PHONY : SvtGenerator.s
+build/x86_64-linux/Release/ldmx/data/server/Makefile:294:SvtGenerator.cc.s:
+build/x86_64-linux/Release/ldmx/data/server/Makefile:295:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtGenerator.cc.s
+build/x86_64-linux/Release/ldmx/data/server/Makefile:296:.PHONY : SvtGenerator.cc.s
+build/x86_64-linux/Release/ldmx/data/server/Makefile:298:SvtHeader.o: SvtHeader.cc.o
+build/x86_64-linux/Release/ldmx/data/server/Makefile:299:.PHONY : SvtHeader.o
+build/x86_64-linux/Release/ldmx/data/server/Makefile:302:SvtHeader.cc.o:
+build/x86_64-linux/Release/ldmx/data/server/Makefile:303:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtHeader.cc.o
+build/x86_64-linux/Release/ldmx/data/server/Makefile:304:.PHONY : SvtHeader.cc.o
+build/x86_64-linux/Release/ldmx/data/server/Makefile:306:SvtHeader.i: SvtHeader.cc.i
+build/x86_64-linux/Release/ldmx/data/server/Makefile:307:.PHONY : SvtHeader.i
+build/x86_64-linux/Release/ldmx/data/server/Makefile:310:SvtHeader.cc.i:
+build/x86_64-linux/Release/ldmx/data/server/Makefile:311:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtHeader.cc.i
+build/x86_64-linux/Release/ldmx/data/server/Makefile:312:.PHONY : SvtHeader.cc.i
+build/x86_64-linux/Release/ldmx/data/server/Makefile:314:SvtHeader.s: SvtHeader.cc.s
+build/x86_64-linux/Release/ldmx/data/server/Makefile:315:.PHONY : SvtHeader.s
+build/x86_64-linux/Release/ldmx/data/server/Makefile:318:SvtHeader.cc.s:
+build/x86_64-linux/Release/ldmx/data/server/Makefile:319:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtHeader.cc.s
+build/x86_64-linux/Release/ldmx/data/server/Makefile:320:.PHONY : SvtHeader.cc.s
+build/x86_64-linux/Release/ldmx/data/server/Makefile:322:SvtMultiSample.o: SvtMultiSample.cc.o
+build/x86_64-linux/Release/ldmx/data/server/Makefile:323:.PHONY : SvtMultiSample.o
+build/x86_64-linux/Release/ldmx/data/server/Makefile:326:SvtMultiSample.cc.o:
+build/x86_64-linux/Release/ldmx/data/server/Makefile:327:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtMultiSample.cc.o
+build/x86_64-linux/Release/ldmx/data/server/Makefile:328:.PHONY : SvtMultiSample.cc.o
+build/x86_64-linux/Release/ldmx/data/server/Makefile:330:SvtMultiSample.i: SvtMultiSample.cc.i
+build/x86_64-linux/Release/ldmx/data/server/Makefile:331:.PHONY : SvtMultiSample.i
+build/x86_64-linux/Release/ldmx/data/server/Makefile:334:SvtMultiSample.cc.i:
+build/x86_64-linux/Release/ldmx/data/server/Makefile:335:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtMultiSample.cc.i
+build/x86_64-linux/Release/ldmx/data/server/Makefile:336:.PHONY : SvtMultiSample.cc.i
+build/x86_64-linux/Release/ldmx/data/server/Makefile:338:SvtMultiSample.s: SvtMultiSample.cc.s
+build/x86_64-linux/Release/ldmx/data/server/Makefile:339:.PHONY : SvtMultiSample.s
+build/x86_64-linux/Release/ldmx/data/server/Makefile:342:SvtMultiSample.cc.s:
+build/x86_64-linux/Release/ldmx/data/server/Makefile:343:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtMultiSample.cc.s
+build/x86_64-linux/Release/ldmx/data/server/Makefile:344:.PHONY : SvtMultiSample.cc.s
+build/x86_64-linux/Release/ldmx/data/server/Makefile:346:SvtTrailer.o: SvtTrailer.cc.o
+build/x86_64-linux/Release/ldmx/data/server/Makefile:347:.PHONY : SvtTrailer.o
+build/x86_64-linux/Release/ldmx/data/server/Makefile:350:SvtTrailer.cc.o:
+build/x86_64-linux/Release/ldmx/data/server/Makefile:351:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtTrailer.cc.o
+build/x86_64-linux/Release/ldmx/data/server/Makefile:352:.PHONY : SvtTrailer.cc.o
+build/x86_64-linux/Release/ldmx/data/server/Makefile:354:SvtTrailer.i: SvtTrailer.cc.i
+build/x86_64-linux/Release/ldmx/data/server/Makefile:355:.PHONY : SvtTrailer.i
+build/x86_64-linux/Release/ldmx/data/server/Makefile:358:SvtTrailer.cc.i:
+build/x86_64-linux/Release/ldmx/data/server/Makefile:359:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtTrailer.cc.i
+build/x86_64-linux/Release/ldmx/data/server/Makefile:360:.PHONY : SvtTrailer.cc.i
+build/x86_64-linux/Release/ldmx/data/server/Makefile:362:SvtTrailer.s: SvtTrailer.cc.s
+build/x86_64-linux/Release/ldmx/data/server/Makefile:363:.PHONY : SvtTrailer.s
+build/x86_64-linux/Release/ldmx/data/server/Makefile:366:SvtTrailer.cc.s:
+build/x86_64-linux/Release/ldmx/data/server/Makefile:367:	cd /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/build/x86_64-linux/Release && $(MAKE) $(MAKESILENT) -f ldmx/data/server/CMakeFiles/ldmx-data-server.dir/build.make ldmx/data/server/CMakeFiles/ldmx-data-server.dir/SvtTrailer.cc.s
+build/x86_64-linux/Release/ldmx/data/server/Makefile:368:.PHONY : SvtTrailer.cc.s
+build/x86_64-linux/Release/ldmx/data/server/Makefile:479:	@echo "... SvtBatch.o"
+build/x86_64-linux/Release/ldmx/data/server/Makefile:480:	@echo "... SvtBatch.i"
+build/x86_64-linux/Release/ldmx/data/server/Makefile:481:	@echo "... SvtBatch.s"
+build/x86_64-linux/Release/ldmx/data/server/Makefile:482:	@echo "... SvtBatchHeader.o"
+build/x86_64-linux/Release/ldmx/data/server/Makefile:483:	@echo "... SvtBatchHeader.i"
+build/x86_64-linux/Release/ldmx/data/server/Makefile:484:	@echo "... SvtBatchHeader.s"
+build/x86_64-linux/Release/ldmx/data/server/Makefile:485:	@echo "... SvtBatchTail.o"
+build/x86_64-linux/Release/ldmx/data/server/Makefile:486:	@echo "... SvtBatchTail.i"
+build/x86_64-linux/Release/ldmx/data/server/Makefile:487:	@echo "... SvtBatchTail.s"
+build/x86_64-linux/Release/ldmx/data/server/Makefile:488:	@echo "... SvtEvent.o"
+build/x86_64-linux/Release/ldmx/data/server/Makefile:489:	@echo "... SvtEvent.i"
+build/x86_64-linux/Release/ldmx/data/server/Makefile:490:	@echo "... SvtEvent.s"
+build/x86_64-linux/Release/ldmx/data/server/Makefile:491:	@echo "... SvtGenerator.o"
+build/x86_64-linux/Release/ldmx/data/server/Makefile:492:	@echo "... SvtGenerator.i"
+build/x86_64-linux/Release/ldmx/data/server/Makefile:493:	@echo "... SvtGenerator.s"
+build/x86_64-linux/Release/ldmx/data/server/Makefile:494:	@echo "... SvtHeader.o"
+build/x86_64-linux/Release/ldmx/data/server/Makefile:495:	@echo "... SvtHeader.i"
+build/x86_64-linux/Release/ldmx/data/server/Makefile:496:	@echo "... SvtHeader.s"
+build/x86_64-linux/Release/ldmx/data/server/Makefile:497:	@echo "... SvtMultiSample.o"
+build/x86_64-linux/Release/ldmx/data/server/Makefile:498:	@echo "... SvtMultiSample.i"
+build/x86_64-linux/Release/ldmx/data/server/Makefile:499:	@echo "... SvtMultiSample.s"
+build/x86_64-linux/Release/ldmx/data/server/Makefile:500:	@echo "... SvtTrailer.o"
+build/x86_64-linux/Release/ldmx/data/server/Makefile:501:	@echo "... SvtTrailer.i"
+build/x86_64-linux/Release/ldmx/data/server/Makefile:502:	@echo "... SvtTrailer.s"
+grep: build/x86_64-linux/Release/ldmx/data/server/libldmx-data-server.so.0.0.0: binary file matches
+grep: build/x86_64-linux/Release/ldmx/builder/server/libldmx-builder-server.so.0.0.0: binary file matches
+grep: build/x86_64-linux/Release/ldmx/builder/server/LdmxBuilderServer: binary file matches
+grep: build/x86_64-linux/Release/ldmx/builder/server/CMakeFiles/LdmxBuilderServer.dir/Parameters.cc.o: binary file matches
+build/x86_64-linux/Release/ldmx/builder/server/CMakeFiles/ldmx-builder-server.dir/RssiServers.cc.o.d:124: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/server/SvtGenerator.hh \
+build/x86_64-linux/Release/ldmx/builder/server/CMakeFiles/ldmx-builder-server.dir/RssiServers.cc.o.d:125: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/server/SvtBatch.hh \
+build/x86_64-linux/Release/ldmx/builder/server/CMakeFiles/ldmx-builder-server.dir/RssiContributor.cc.o.d:123: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/server/SvtGenerator.hh \
+build/x86_64-linux/Release/ldmx/builder/server/CMakeFiles/ldmx-builder-server.dir/RssiContributor.cc.o.d:124: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/server/SvtBatch.hh \
+grep: build/x86_64-linux/Release/ldmx/builder/server/CMakeFiles/ldmx-builder-server.dir/RssiConnection.cc.o: binary file matches
+grep: build/x86_64-linux/Release/ldmx/builder/server/CMakeFiles/ldmx-builder-server.dir/RssiServers.cc.o: binary file matches
+grep: build/x86_64-linux/Release/ldmx/builder/server/CMakeFiles/ldmx-builder-server.dir/RssiContributor.cc.o: binary file matches
+build/x86_64-linux/Release/ldmx/builder/server/CMakeFiles/ldmx-builder-server.dir/RssiConnection.cc.o.d:123: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/server/SvtGenerator.hh \
+build/x86_64-linux/Release/ldmx/builder/server/CMakeFiles/ldmx-builder-server.dir/RssiConnection.cc.o.d:124: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/include/ldmx/data/server/SvtBatch.hh \
+grep: build/x86_64-linux/Release/ldmx/builder/client/libldmx-builder-parser.a: binary file matches
+grep: build/x86_64-linux/Release/ldmx/builder/client/LdmxBuilder: binary file matches
+grep: build/x86_64-linux/Release/ldmx/builder/client/CfgTest: binary file matches
+grep: build/x86_64-linux/Release/ldmx/builder/client/libldmx-builder-core.a: binary file matches
+grep: build/x86_64-linux/Release/ldmx/builder/client/libldmx-builder-client.so.0.0.0: binary file matches
+grep: build/x86_64-linux/Release/ldmx/builder/client/CMakeFiles/CfgTest.dir/CfgTest.cc.o: binary file matches
+grep: build/x86_64-linux/Release/ldmx/builder/client/CMakeFiles/CfgTest.dir/Configuration.cc.o: binary file matches
+grep: build/x86_64-linux/Release/ldmx/builder/client/CMakeFiles/ldmx-builder-core.dir/Fragment.cc.o: binary file matches
+grep: build/x86_64-linux/Release/ldmx/builder/client/CMakeFiles/ldmx-builder-core.dir/RssiContributor.cc.o: binary file matches
+build/x86_64-linux/Release/ldmx/builder/client/CMakeFiles/ldmx-builder-core.dir/RssiContributor.cc.o.d:4: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/builder/client/Svt.hh \
+grep: build/x86_64-linux/Release/ldmx/builder/client/CMakeFiles/ldmx-builder-core.dir/Contribution.cc.o: binary file matches
+grep: build/x86_64-linux/Release/ldmx/builder/client/CMakeFiles/ldmx-builder-core.dir/TriggerReceiver.cc.o: binary file matches
+grep: build/x86_64-linux/Release/ldmx/builder/client/CMakeFiles/ldmx-builder-core.dir/Configuration.cc.o: binary file matches
+grep: build/x86_64-linux/Release/ldmx/builder/client/CMakeFiles/ldmx-builder-core.dir/Builder.cc.o: binary file matches
+build/x86_64-linux/Release/ldmx/builder/client/CMakeFiles/ldmx-builder-core.dir/Fragment.cc.o.d:187: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/builder/client/Svt.hh
+build/x86_64-linux/Release/ldmx/builder/client/CMakeFiles/ldmx-builder-core.dir/RssiReceiver.cc.o.d:187: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/builder/client/Svt.hh \
+grep: build/x86_64-linux/Release/ldmx/builder/client/CMakeFiles/ldmx-builder-core.dir/RssiConnection.cc.o: binary file matches
+grep: build/x86_64-linux/Release/ldmx/builder/client/CMakeFiles/ldmx-builder-core.dir/RssiReceiver.cc.o: binary file matches
+grep: build/x86_64-linux/Release/ldmx/builder/client/CMakeFiles/ldmx-builder-parser.dir/CfgParser.cc.o: binary file matches
+grep: build/x86_64-linux/Release/ldmx/builder/client/CMakeFiles/ldmx-builder-client.dir/RogueCodaGw.cc.o: binary file matches
+build/x86_64-linux/Release/ldmx/builder/client/CMakeFiles/ldmx-builder-client.dir/RogueCodaGw.cc.o.d:230: /sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/src/ldmx/builder/client/Svt.hh \
+grep: build/x86_64-linux/Release/ldmx/builder/client/CMakeFiles/LdmxBuilder.dir/LdmxBuilder.cc.o: binary file matches
+grep: build/x86_64-linux/Release/ldmx/builder/client/CMakeFiles/LdmxBuilder.dir/Parameters.cc.o: binary file matches
+build/x86_64-linux/Release/install_manifest.txt:22:/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/install/x86_64-linux/./include/ldmx/data/client/SvtMultiSample.hh
+build/x86_64-linux/Release/install_manifest.txt:24:/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/install/x86_64-linux/./include/ldmx/data/client/SvtHeader.hh
+build/x86_64-linux/Release/install_manifest.txt:25:/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/install/x86_64-linux/./include/ldmx/data/client/SvtEvent.hh
+build/x86_64-linux/Release/install_manifest.txt:26:/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/install/x86_64-linux/./include/ldmx/data/client/SvtBatchHeader.hh
+build/x86_64-linux/Release/install_manifest.txt:28:/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/install/x86_64-linux/./include/ldmx/data/client/SvtBatch.hh
+build/x86_64-linux/Release/install_manifest.txt:31:/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/install/x86_64-linux/./include/ldmx/data/client/SvtTrailer.hh
+build/x86_64-linux/Release/install_manifest.txt:32:/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/install/x86_64-linux/./include/ldmx/data/client/SvtBatchTail.hh
+build/x86_64-linux/Release/install_manifest.txt:33:/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/install/x86_64-linux/./include/ldmx/data/common/SvtBatchTail.hh
+build/x86_64-linux/Release/install_manifest.txt:37:/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/install/x86_64-linux/./include/ldmx/data/common/SvtHeader.hh
+build/x86_64-linux/Release/install_manifest.txt:38:/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/install/x86_64-linux/./include/ldmx/data/common/SvtMultiSample.hh
+build/x86_64-linux/Release/install_manifest.txt:39:/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/install/x86_64-linux/./include/ldmx/data/common/SvtBatchHeader.hh
+build/x86_64-linux/Release/install_manifest.txt:40:/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/install/x86_64-linux/./include/ldmx/data/common/SvtTrailer.hh
+build/x86_64-linux/Release/install_manifest.txt:41:/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/install/x86_64-linux/./include/ldmx/data/server/SvtEvent.hh
+build/x86_64-linux/Release/install_manifest.txt:42:/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/install/x86_64-linux/./include/ldmx/data/server/SvtBatch.hh
+build/x86_64-linux/Release/install_manifest.txt:43:/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/install/x86_64-linux/./include/ldmx/data/server/SvtHeader.hh
+build/x86_64-linux/Release/install_manifest.txt:44:/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/install/x86_64-linux/./include/ldmx/data/server/SvtMultiSample.hh
+build/x86_64-linux/Release/install_manifest.txt:48:/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/install/x86_64-linux/./include/ldmx/data/server/SvtBatchTail.hh
+build/x86_64-linux/Release/install_manifest.txt:49:/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/install/x86_64-linux/./include/ldmx/data/server/SvtBatchHeader.hh
+build/x86_64-linux/Release/install_manifest.txt:50:/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/install/x86_64-linux/./include/ldmx/data/server/SvtGenerator.hh
+build/x86_64-linux/Release/install_manifest.txt:52:/sdf/home/s/smidd/DAQ/ldmx-firmware/software/daq/install/x86_64-linux/./include/ldmx/data/server/SvtTrailer.hh
+src/ldmx/builder/client/RogueCodaGw-Real.cc:79:   if ( rogueSMemControlValue(smem_,ROOTNAME ".SvtEbConfigFile",ebFile,1000) != 0 ) return -1;
+src/ldmx/builder/client/RogueCodaGw-Real.cc:92:   if ( rogueSMemControlValue(smem_,ROOTNAME ".SvtRunType",tmpStr,100) != 0 ) return -1;

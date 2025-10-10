@@ -78,12 +78,12 @@
 */
 
 
-#include "ldmx/data/server/SvtGenerator.hh"
-#include "ldmx/data/server/SvtBatch.hh"
+#include "ldmx/data/server/GenericGenerator.hh"
+#include "ldmx/data/server/GenericBatch.hh"
 #include "ldmx/data/server/TriggerHeader.hh"
 #include "ldmx/data/server/TriggerEvent.hh"
 
-#include "ldmx/data/client/SvtBatch.hh"
+#include "ldmx/data/client/GenericBatch.hh"
 #include "ldmx/data/client/TriggerHeader.hh"
 #include "ldmx/data/client/TriggerEvent.hh"
 
@@ -272,7 +272,7 @@ void Parameters::report_usage ()
              << std::endl;
 
    std::cout << "\n\n"
-      "  LdmxBatchTest generates fake SVT data.  It is meant to check the fake"
+      "  LdmxBatchTest generates fake Generic data.  It is meant to check the fake"
       "  event generation.\n"
       "  There are 3 levels: Data, Event, Batch and Number of Batches\n\n"
       
@@ -308,7 +308,7 @@ int main (int argc, char *const argv[])
    Parameters prms (argc, argv);
 
    uint32_t buffer[10000];
-   SvtBatch batch (buffer, sizeof(buffer));
+   GenericBatch batch (buffer, sizeof(buffer));
 
 
    int nbatches = prms.m_nbatches;
@@ -318,7 +318,7 @@ int main (int argc, char *const argv[])
    int offset         = 0x80;
    uint8_t RceAddress = 0x77;
 
-   SvtGenerator generator (RceAddress);
+   GenericGenerator generator (RceAddress);
    
    for (int ibatch = 0; ibatch < nbatches; ++ibatch)
    {
@@ -345,7 +345,7 @@ static void dump (uint8_t const *buffer, int nbytes)
    putchar ('\n');
 
 
-   SvtBatch batch (initNEvents);
+   GenericBatch batch (initNEvents);
    batch.populate (buffer, nbytes);
    batch.print    ();
    printf ("Done\n");

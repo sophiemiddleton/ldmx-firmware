@@ -44,14 +44,14 @@ announce ()
 # LIBRARY: LDMX data server
 # -------------------------
 
-  add_library              (ldmx-data-server SHARED   SvtBatch.cc
-                                                      SvtBatchHeader.cc
-                                                      SvtBatchTail.cc
-                                                      SvtEvent.cc
-                                                      SvtHeader.cc
-                                                      SvtMultiSample.cc
-                                                      SvtTrailer.cc
-                                                      SvtGenerator.cc
+  add_library              (ldmx-data-server SHARED   GenericBatch.cc
+                                                      GenericBatchHeader.cc
+                                                      GenericBatchTail.cc
+                                                      GenericEvent.cc
+                                                      GenericHeader.cc
+                                                      GenericMultiSample.cc
+                                                      GenericTrailer.cc
+                                                      GenericGenerator.cc
 
                                                       TriggerBatch.cc
                                                       TriggerHeader.cc

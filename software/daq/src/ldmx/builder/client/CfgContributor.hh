@@ -72,20 +72,20 @@ public:
    bool parse            (char                      **str,
                           CfgParameters const &parameters);
 
-   bool defineSvt        (char                      **str,
+   bool defineGeneric        (char                      **str,
                           CfgParameters const &parameters);
 
    bool defineTrigger    (char **str,
                           CfgParameters const &parameters);
 
-   bool setSvt           (char **str);
+   bool setGeneric           (char **str);
    bool setTrigger       (char **str);
 
    bool set              (char const           *fieldName,
                           CfgParameters const &parameters,
                           char                     **str);
 
-   bool setSvt           (char const           *fieldName,
+   bool setGeneric           (char const           *fieldName,
                           CfgParameters const &parameters,
                           char                      **str);
 
@@ -179,13 +179,13 @@ inline bool CfgContributor::parse (char                      **str,
    char const *ctbType = getToken (str);
 
    
-   if (compare (ctbType,  "SVT"))
+   if (compare (ctbType,  "Generic"))
    {
-      ///std::cout << "Contributor type = SVT" << std::endl;
-      m_ctbType = CfgContributor::ContributorType::Svt;
-      bool   err = defineSvt (str, parameters);
+      ///std::cout << "Contributor type = Generic" << std::endl;
+      m_ctbType = CfgContributor::ContributorType::GenericContributor;
+      bool   err = defineGeneric (str, parameters);
 
-      /// std::cerr << "CfgContribution::parse  SVT status" << err << std::endl;
+      /// std::cerr << "CfgContribution::parse  Generic status" << err << std::endl;
       return err;
    }
 
@@ -202,7 +202,7 @@ inline bool CfgContributor::parse (char                      **str,
    {
       std::cerr << "CfgParser::error Unrecognized contributor type <" << ctbType
                 << '>'
-                << ", must be one of SVT, TRG" << std::endl;
+                << ", must be one of Generic, TRG" << std::endl;
       return false;
    }
 }
@@ -228,14 +228,14 @@ inline void CfgParser::report (int         lineNum,
 
 /* ---------------------------------------------------------------------- *//*!
 
-  \brief  Fills in the descriptor for an SVT contributor
+  \brief  Fills in the descriptor for an Generic contributor
   \return true on failure
 
   \param[in]        str  The remaining part of the line to parse
   \param[in] parameters  Source of symbolic parameters
                                                                           */
 /* ---------------------------------------------------------------------- */
-inline bool CfgContributor::defineSvt (char                      **str, 
+inline bool CfgContributor::defineGeneric (char                      **str, 
                                        CfgParameters const &parameters)
 {
    bool err;
@@ -245,7 +245,7 @@ inline bool CfgContributor::defineSvt (char                      **str,
       char const *fieldName = getToken (str);
       if (fieldName == nullptr) break;
 
-      err = setSvt (fieldName, parameters, str);
+      err = setGeneric (fieldName, parameters, str);
       if (err) return true;
    }
 
@@ -274,13 +274,13 @@ inline bool CfgContributor::set (char const          *fieldName,
   \param[in]        str  The remaining part of the line to parse
                                                                           */
 /* ---------------------------------------------------------------------- */
-inline bool CfgContributor::setSvt (char const          *fieldName, 
+inline bool CfgContributor::setGeneric (char const          *fieldName, 
                                     CfgParameters const &parameters,
                                     char                      **str)
 {
    bool err;
 
-   /// std::cout << "SVT fieldname <" << fieldName << '>' << std::endl;
+   /// std::cout << "Generic fieldname <" << fieldName << '>' << std::endl;
    if (compare (fieldName, "TRANSPORT"))
    {
       char const *trnTypeToken = getValue (str, parameters);
@@ -309,7 +309,7 @@ inline bool CfgContributor::setSvt (char const          *fieldName,
    {
       /// std::cout << "Got buffering" << std::endl;
       
-      // Get the SVT buffering (basically either RSSI frames or TCP/IP buffer
+      // Get the Generic buffering (basically either RSSI frames or TCP/IP buffer
       char const *bufferingToken = getValue (str, parameters);
       err = setBuffering (bufferingToken);
       if (err) return true;
@@ -344,13 +344,13 @@ inline bool CfgContributor::setSvt (char const          *fieldName,
 
 /* ---------------------------------------------------------------------- *//*!
 
-  \brief  Fills in the descriptor for an SVT contributor
+  \brief  Fills in the descriptor for an Generic contributor
   \return true on error
 
   \param[in]  str  The remaining part of the line to parse
                                                                           */
 /* ---------------------------------------------------------------------- */
-inline bool CfgContributor::setSvt (char **str)
+inline bool CfgContributor::setGeneric (char **str)
 {
    return false;
 }
@@ -375,7 +375,7 @@ inline bool CfgContributor::setTrigger (char **str)
 
 /* ---------------------------------------------------------------------- *//*!
 
-  \brief  Fills in the descriptor for an SVT contributor
+  \brief  Fills in the descriptor for an Generic contributor
   \return true on error
 
   \param[in]        str  The remaining part of the line to parse
@@ -448,7 +448,7 @@ inline bool CfgContributor::setTrigger (char const          *fieldName,
    {
       /// std::cout << "Got buffering" << std::endl;
       
-      // Get the SVT buffering (basically either RSSI frames or TCP/IP buffer
+      // Get the Generic buffering (basically either RSSI frames or TCP/IP buffer
       char const *bufferingToken = getValue (str, parameters);
       err = setBuffering (bufferingToken);
       if (err) return true;
@@ -644,7 +644,7 @@ inline void CfgContributor::print (std::string const &name, int instance) const
       "Unknown",
       "None",
       "Trigger",
-      "Svt"
+      "Generic"
    };
 
    static const char TrnTypes[5][8] =

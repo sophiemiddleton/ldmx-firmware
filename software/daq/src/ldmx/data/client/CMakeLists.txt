@@ -38,13 +38,13 @@ announce ()
 # LIBRARY: LDMX data client
 # ------------------------
 
-  add_library                 (ldmx-data-client SHARED SvtBatch.cc
-                                                       SvtBatchHeader.cc
-                                                       SvtBatchTail.cc
-                                                       SvtEvent.cc
-                                                       SvtHeader.cc
-                                                       SvtMultiSample.cc
-                                                       SvtTrailer.cc)
+  add_library                 (ldmx-data-client SHARED GenericBatch.cc
+                                                       GenericBatchHeader.cc
+                                                       GenericBatchTail.cc
+                                                       GenericEvent.cc
+                                                       GenericHeader.cc
+                                                       GenericMultiSample.cc
+                                                       GenericTrailer.cc)
 
   set_target_soversion        (ldmx-data-client 0 0 0)
   target_standard_compilation (ldmx-data-client)

@@ -44,7 +44,7 @@
 #include "RssiConnection.hh"
 #include "RssiContributor.hh"   
 
-#include "Svt.hh"
+#include "GenericContributor.hh"
 
 
 #include "ldmx/builder/Logging.hh"
@@ -98,14 +98,14 @@ RssiReceiver::RssiReceiver (ldmx::builder::client::Configuration const &cfg,
 
 
    // -----------------------------------
-   // Construct the SVT data contributors
+   // Construct the Generic data contributors
    // -----------------------------------
    for (int idx = 0; idx < ncfgCtbs; ++idx)
    {
       m_contributors[idx] = RssiContributor::construct (idx + ctbBeg,
                                                         cfgCtbs[idx],
                                                         m_contributions.m_ctbs,
-                                                        sizeof (Svt));
+                                                        sizeof (Generic));
    }
 
    return;

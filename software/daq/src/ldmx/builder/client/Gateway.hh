@@ -48,7 +48,7 @@
 #include "Contributions.hh"
 #include "RssiReceiver.hh"
 #include "TriggerReceiver.hh"
-#include "Svt.hh"
+#include "GenericContributor.hh"
 
 #include "ldmx/utl/List.hh"
 #include "ldmx/utl/Timeout.hh"
@@ -91,7 +91,7 @@ public:
 
 public:
    Contributions          m_ctbs;
-   RssiReceiver    m_svtReceiver;
+   RssiReceiver    m_genericReceiver;
    TriggerReceiver m_trgReceiver;
    Builder             m_builder;
 };
@@ -105,7 +105,7 @@ public:
 /* LOCAL PROTOTYPES                                                       */
 /* ---------------------------------------------------------------------- */
 static int32_t  copyFragment (uint32_t *dst32, Fragment const *fragment);
-static uint32_t      copySvt (uint8_t    *dst, Svt      const      *svt);
+static uint32_t      copyGeneric (uint8_t    *dst, Generic      const      *generic);
 /* ====================================================================== */
 
 
@@ -185,18 +185,18 @@ inline int32_t Gateway::download(ldmx::builder::client::Configuration const &cfg
 {
    // Total up the number of contribution sources
    int ncontributions = 1                             //  Control contribution
-                      + cfg.m_contributors.size (); //  SVT     contributions
+                      + cfg.m_contributors.size (); //  Generic     contributions
                       
 
    // Construct the synchonization class for incoming messages and data
    new (&m_ctbs) Contributions (ncontributions);
 
 
-   // Construct the SVT receivers at contributions = [1 , 1 + nSVT receivers]
-   new (&m_svtReceiver) RssiReceiver (cfg, &m_ctbs, 1);
+   // Construct the Generic receivers at contributions = [1 , 1 + nGeneric receivers]
+   new (&m_genericReceiver) RssiReceiver (cfg, &m_ctbs, 1);
 
 
-   uint32_t allContributors = m_svtReceiver.getContributors ();
+   uint32_t allContributors = m_genericReceiver.getContributors ();
 //                          | m_trgReceiver.getContributors ();
 
 
@@ -228,12 +228,12 @@ inline int32_t Gateway::prestart ()
    //printf ("Trigger started\n");
 
 
-   // Start/Enable the SVT contributor's connections
-   m_svtReceiver.start  ();
+   // Start/Enable the Generic contributor's connections
+   m_genericReceiver.start  ();
 
 
    // Check that all connections started
-   auto missing = m_svtReceiver.waitForConnections ();
+   auto missing = m_genericReceiver.waitForConnections ();
 
 
    // Report any missing contributors and abort if any
@@ -391,7 +391,7 @@ inline void Gateway::close ()
 /* ---------------------------------------------------------------------- */
 inline static int32_t copyFragment (uint32_t *dst32, Fragment const *fragment)
 {
-   uint32_t              svtPresent = fragment->m_svtPresent;
+   uint32_t              genericPresent = fragment->m_genericPresent;
    Contribution const * const *ctbs = fragment->m_ctbs;
    uint8_t                     *dst = reinterpret_cast<decltype(dst)>(dst32);
 
@@ -399,12 +399,12 @@ inline static int32_t copyFragment (uint32_t *dst32, Fragment const *fragment)
    //        present);
    
 
-   while (svtPresent)
+   while (genericPresent)
    {
-      int         id = __builtin_ctz (svtPresent);
-      Svt const *svt = reinterpret_cast<decltype(svt)>(ctbs[id]);
-      dst           += copySvt (dst, svt);
-      svtPresent    &= ~(1 << id);
+      int         id = __builtin_ctz (genericPresent);
+      GenericContributor const *generic = reinterpret_cast<decltype(generic)>(ctbs[id]);
+      dst           += copyGeneric (dst, generic);
+      genericPresent    &= ~(1 << id);
    }
 
 
@@ -417,26 +417,26 @@ inline static int32_t copyFragment (uint32_t *dst32, Fragment const *fragment)
 
 /* ---------------------------------------------------------------------- *//*!
 
-  \brief  Copies the SVT's data into the output buffer
+  \brief  Copies the Generic's data into the output buffer
   \return The number of bytes copied
 
   \param[out] dst The destination buffer
-  \param[ in] svt The svt data to copy
+  \param[ in] generic The generic data to copy
                                                                           */
 /* ---------------------------------------------------------------------- */
-inline static uint32_t copySvt (uint8_t *dst,  Svt const *svt)
+inline static uint32_t copyGeneric (uint8_t *dst,  Generic const *generic)
 { 
-   int               ievt = svt->m_evtIdx;
+   int               ievt = generic->m_evtIdx;
    std::shared_ptr<rogue::protocols::batcher::Data> 
-                    &data = svt->m_core->record (ievt);
+                    &data = generic->m_core->record (ievt);
 
 
    auto size = data->size  ();
    auto iter = data->begin ();
    
    
-   printf ("SVT %2x %2x %8.8" PRIx32 " %8.8" PRIx32 "\n", 
-           svt->m_id, ievt, svt->m_sequence, size);
+   printf ("Generic %2x %2x %8.8" PRIx32 " %8.8" PRIx32 "\n", 
+           generic->m_id, ievt, generic->m_sequence, size);
 
 
    fromFrame (iter, size, reinterpret_cast<void *>(dst));

@@ -86,7 +86,7 @@ public:
    enum class Type
    {
       Trigger = 0,                 /*!< Trigger contribution              */
-      Svt     = 1                  /*!< SVT     contribution              */
+      Generic     = 1                  /*!< Generic     contribution              */
    };
 
 public:

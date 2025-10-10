@@ -76,7 +76,7 @@ public:
       Unknown = -1,
       None    =  0,
       Trigger =  1,
-      Svt     =  2
+      Generic     =  2
    };
 
 
@@ -91,7 +91,7 @@ public:
                    int             nevents);
 
 public:
-   bool isSvt     () const;
+   bool isGeneric     () const;
    bool isTrigger () const;
 
 public:
@@ -100,7 +100,7 @@ public:
       
 public:
    ContributorType
-                 m_ctbType;  /*!< The contributor type: SVT, TRG           */
+                 m_ctbType;  /*!< The contributor type: Generic, TRG           */
    TransportType m_trnType;  /*!< The transport    type: RSSI, TCP/IP, PIPE*/
    char       m_trnStr[32];  /*!< The transport  string: IP or PIPE name   */
    uint16_t         m_port;  /*!< The port number                          */
@@ -149,7 +149,7 @@ inline CfgContributor::CfgContributor::CfgContributor () :
 
   \brief Complete constructor, filling in all fields
 
-  \param[in]    ctbType The contributor type (SVT, TRG)
+  \param[in]    ctbType The contributor type (Generic, TRG)
   \param[in]    trnType The transport type (TCP/IP, RSSI, PIPE)
   \param[in]    trnName The transport connection name (it's IP, pipe name...)
   \param[in] trnNameLen The number of characters in the transport name
@@ -186,15 +186,15 @@ inline CfgContributor::CfgContributor (ContributorType  ctbType,
 
 /* ---------------------------------------------------------------------- *//*!
 
- \brief  Check  if this is an SVT contributor
- \retval true,  if this is an SVT contributor
- \retval false, if this is not an SVT contributor
+ \brief  Check  if this is an Generic contributor
+ \retval true,  if this is an Generic contributor
+ \retval false, if this is not an Generic contributor
                                                                           */
 /* ---------------------------------------------------------------------- */
-inline bool CfgContributor::isSvt () const
+inline bool CfgContributor::isGeneric () const
 {
-   bool   is_svt = (m_ctbType == ContributorType::Svt);
-   return is_svt;
+   bool   is_Generic = (m_ctbType == ContributorType::GenericContributor);
+   return is_Generic;
 }
 /* ---------------------------------------------------------------------- */
 
@@ -236,7 +236,7 @@ inline void CfgContributor::printTitle ()
 /* ---------------------------------------------------------------------- */
 inline void CfgContributor::print () const
 {
-   char const  *ctbName = isSvt     () ? "SVT"
+   char const  *ctbName = isGeneric     () ? "Generic"
                         : isTrigger () ? "TRG"
                         : "Unknown";
 

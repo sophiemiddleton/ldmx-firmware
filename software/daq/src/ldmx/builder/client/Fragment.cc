@@ -3,7 +3,7 @@
 /* ---------------------------------------------------------------------- *//*!
 
   \file   ldmx/builder/client/Fragment.hh
-  \brief  The aggregation of data contributions (\e e.g. Trigger and SVT)
+  \brief  The aggregation of data contributions (\e e.g. Trigger and generic)
           into a coherent class.  The aggregation is called an Fragment.
   \author JJRussell - russell@slac.stanford.edu
 
@@ -41,7 +41,7 @@
 
 #include "Fragment.hh"
 #include "Contribution.hh"
-#include "Svt.hh"
+#include "GenericContributor.hh"
 
 #include <cinttypes>
 #include <cstdio>
@@ -108,11 +108,11 @@ namespace destructor
    }
 
 
-   inline static void reportSvt (int                     id, 
+   inline static void reportGeneric (int                     id, 
                                  uint32_t          sequence,
                                  unsigned long int useCount)
    {
-      printf (" [%d:%8.8" PRIx32 ": %2ld (svt)]",
+      printf (" [%d:%8.8" PRIx32 ": %2ld (Generic)]",
               id, sequence, useCount);
       return;
    }
@@ -134,7 +134,7 @@ namespace destructor
 
    inline static void report    (uint32_t          sequence,
                                  uint32_t           present) { return; }
-   inline static void reportSvt (int                     id, 
+   inline static void reportGeneric (int                     id, 
                                  uint32_t          sequence,
                                  unsigned long int useCount) { return; }
    inline static void reportTrg (int  id, uint32_t sequence) { return; }
@@ -168,7 +168,7 @@ Fragment::Fragment (uint64_t     timestamp,
    m_duplicate (               0)
 {
    uint32_t    emptied = 0;
-   uint32_t svtPresent = 0;
+   uint32_t genericPresent = 0;
    uint32_t trgPresent = 0;
 
    constructor::report (sequence);
@@ -202,10 +202,10 @@ Fragment::Fragment (uint64_t     timestamp,
 
 
       // ------------------------------------------
-      // Set the masks of SVT and TRG contributions
+      // Set the masks of generic and TRG contributions
       // ------------------------------------------
       Contribution const *ctb = reinterpret_cast<decltype(ctb)>(node);
-      if      (ctb->m_type == Contribution::Type::    Svt) svtPresent |= mask;
+      if      (ctb->m_type == Contribution::Type::    generic) genericPresent |= mask;
       else if (ctb->m_type == Contribution::Type::Trigger) trgPresent |= mask;
 
 
@@ -227,10 +227,10 @@ Fragment::Fragment (uint64_t     timestamp,
 
   
    // -----------------------------------------
-   // Set the mask of SVT & TRG contributions
+   // Set the mask of generic & TRG contributions
    // Return the set of lists that were emptied
    // -----------------------------------------
-   m_svtPresent = svtPresent;
+   m_genericPresent = genericPresent;
    m_trgPresent = trgPresent;
    *emptiedSet  = emptied;
 
@@ -272,13 +272,13 @@ Fragment::~Fragment ()
       // -----------------------------------------
       // Separate destruction by contribution type
       // -----------------------------------------
-      if (ctb->m_type == Type::Svt)
+      if (ctb->m_type == Type::generic)
       {
-         Svt *svt = reinterpret_cast<decltype (svt)>(ctb);
+         generic *generic = reinterpret_cast<decltype (generic)>(ctb);
 
-         destructor::reportSvt (id, ctb->m_sequence, svt->m_core.use_count ());
+         destructor::reportgeneric (id, ctb->m_sequence, generic->m_core.use_count ());
 
-         svt->m_core.reset ();
+         generic->m_core.reset ();
       }
       else
       {

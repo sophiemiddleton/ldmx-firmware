@@ -28,7 +28,7 @@
 RogueCodaGw::RogueCodaGw() {
 
    // Open shared memory
-   smemFd_ = rogueSMemControlOpenAndMap(&smem_, "LDMX_SVT");
+   smemFd_ = rogueSMemControlOpenAndMap(&smem_, "LDMX_GENERIC");
    lastEventNumber_ = 0;
    trigData_ = NULL;
    trigLength_ = 0;

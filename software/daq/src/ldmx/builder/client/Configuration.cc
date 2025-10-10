@@ -87,7 +87,7 @@ void Configuration::addContributor (char const *name,
                                     int      nevents)
 {
    ldmx::builder::client::CfgContributor 
-      ctb (CfgContributor::ContributorType::Svt,
+      ctb (CfgContributor::ContributorType::GenericContributer,
            CfgContributor::TransportType::Rssi,
            name,
            len,
@@ -156,7 +156,7 @@ void Configuration::print (std::string const &name) const
 //             << " Triggers          : " << m_ntrgEventsPerBatch << " * "
 //                                        << m_ntrgBatches << " = "
 //                                        << m_ntrgEvents  << '\n'
-//             << " Events            : " << m_nsvtEvents  << '\n'
+//             << " Events            : " << m_ngenricEvents  << '\n'
 //             << " Rssi Frames       : " << m_nrssiFrames
              << std::endl;
 

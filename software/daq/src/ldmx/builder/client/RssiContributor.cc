@@ -39,7 +39,7 @@
 
 #define __STDC_FORMAT_MACROS 1
 
-#include "Svt.hh" 
+#include "GenericContributor.hh" 
 #include "RssiContributor.hh"
 #include "RssiConnection.hh"
 #include "Contribution.hh"
@@ -130,7 +130,7 @@ static void init (void *init_prms,
    InitPrms const *prms = reinterpret_cast<decltype(prms)>(init_prms);
 
    ctb->m_fpa  = prms->m_fpa;
-   ctb->m_type = Contribution::Type::Svt;
+   ctb->m_type = Contribution::Type::GenericContributor;
    ctb->m_id   = prms->m_id;
    return;
 }
@@ -293,7 +293,7 @@ void RssiContributor::
       // ---------------------------------------------------------
       // Allocate a node to hold a description of this data record
       // ---------------------------------------------------------
-      Svt *svt = new (m_fpa) Svt (    size,
+      GenericContributor *generic = new (m_fpa) GenericContributor (    size,
                                   sequence,
                                    rcvTime,
                                       ievt,
@@ -303,7 +303,7 @@ void RssiContributor::
       // ----------------------------
       // Place node on the local list
       // ----------------------------
-      lclList.insert (svt);
+      lclList.insert (generic);
       ///dumpData (data);
    }
 

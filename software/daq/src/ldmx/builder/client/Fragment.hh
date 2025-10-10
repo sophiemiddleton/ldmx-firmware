@@ -6,7 +6,7 @@
 /* ---------------------------------------------------------------------- *//*!
 
   \file   ldmx/builder/client/Fragment.hh
-  \brief  The aggregation of data contributions (\e e.g. Trigger and SVT)
+  \brief  The aggregation of data contributions (\e e.g. Trigger and generic)
           into a coherent class.  The aggregation is called an Fragment.
   \author JJRussell - russell@slac.stanford.edu
 
@@ -113,7 +113,7 @@ public:
                                     these are contributors that never
                                     arrrived                              */
    uint32_t       m_present;   /*!< Bit mask of all present contributors  */
-   uint32_t    m_svtPresent;   /*!< Bit mask of SVT contributors          */
+   uint32_t    m_genericPresent;   /*!< Bit mask of generic contributors          */
    uint32_t    m_trgPresent;   /*!< Bit mask of TRG contributor           */
    uint32_t     m_duplicate;   /*!< Duplicate contributors                */
    uint64_t  m_received[32];   /*!< The time the contribution was received*/
