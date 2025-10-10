@@ -41,8 +41,8 @@
 #include "RssiContributor.hh"
 #include "RssiConnection.hh"
 
-#include "ldmx/data/server/SvtGenerator.hh"
-#include "ldmx/data/server/SvtBatch.hh"
+#include "ldmx/data/server/GenericGenerator.hh"
+#include "ldmx/data/server/GenericBatch.hh"
 #include "ldmx/utl/Timestamp.hh"
 
 #include <rogue/protocols/packetizer/CoreV2.h>
@@ -64,8 +64,8 @@ static const size_t NBytesBatch = 32*1024;
 \* ---------------------------------------------------------------------- */
 RssiContributor::RssiContributor () :
    m_stats           (),
-   m_svtGenerator    (0),
-   m_svtBatch        (malloc (NBytesBatch), NBytesBatch),
+   m_GenericGenerator    (0),
+   m_GenericBatch        (malloc (NBytesBatch), NBytesBatch),
    m_neventsPerBatch (0)
 {
    return;
@@ -95,8 +95,8 @@ RssiContributor::RssiContributor (int              serverId,
                                   int               nframes) :
    m_connection      (serverId, clientIp, clientPort, nframes),
    m_stats           (),
-   m_svtGenerator    (rceAddress),
-   m_svtBatch        (malloc (NBytesBatch), NBytesBatch),
+   m_GenericGenerator    (rceAddress),
+   m_GenericBatch        (malloc (NBytesBatch), NBytesBatch),
    m_neventsPerBatch (neventsPerBatch)
 {
    return;
@@ -189,8 +189,8 @@ public:
 uint32_t RssiContributor::generate (unsigned short int       nevents,
                                     unsigned short int nmultisamples)
 {
-   m_svtGenerator.reset    (&m_svtBatch);
-   m_svtGenerator.generate (&m_svtBatch, 
+   m_GenericGenerator.reset    (&m_GenericBatch);
+   m_GenericGenerator.generate (&m_GenericBatch, 
                             nevents, 
                             nmultisamples);
 
@@ -204,18 +204,18 @@ uint32_t RssiContributor::generate (unsigned short int       nevents,
 /* ---------------------------------------------------------------------- *//*!
 
   \brief  Fills in some fake data one event
-  \return A flag indicating whether the SVT batch is filled
+  \return A flag indicating whether the Generic batch is filled
 
   \param[in] nmultisamples The number of multisamples per event
                                                                           */
 /* ---------------------------------------------------------------------- */
 bool RssiContributor::generateEvent (unsigned short int nmultisamples)
 {
-   uint32_t nevents = m_svtBatch.getNevents ();
-   if (nevents == 0)  m_svtGenerator.addHeader (&m_svtBatch);
+   uint32_t nevents = m_GenericBatch.getNevents ();
+   if (nevents == 0)  m_GenericGenerator.addHeader (&m_GenericBatch);
 
    
-   nevents = m_svtGenerator.addEvent (&m_svtBatch, nmultisamples);
+   nevents = m_GenericGenerator.addEvent (&m_GenericBatch, nmultisamples);
    bool filled = (nevents == m_neventsPerBatch);
 
    return filled;
@@ -231,10 +231,10 @@ bool RssiContributor::generateEvent (unsigned short int nmultisamples)
 void RssiContributor::sendBatch ()
 {
    // ----------------------------------------------------------
-   // Retrieve the address of the SVT batch buffer and it length
+   // Retrieve the address of the Generic batch buffer and it length
    // ----------------------------------------------------------
-   void const *buffer = m_svtBatch.getBuffer ();
-   uint32_t    nbytes = m_svtBatch.getNbytes ();
+   void const *buffer = m_GenericBatch.getBuffer ();
+   uint32_t    nbytes = m_GenericBatch.getNbytes ();
 
 
    Statistics prv = m_stats;
@@ -263,12 +263,12 @@ void RssiContributor::sendBatch ()
 
 /* ---------------------------------------------------------------------- *//*!
 
-  \brief  Resets/clears the SVT batch
+  \brief  Resets/clears the Generic batch
                                                                           */
 /* ---------------------------------------------------------------------- */
 void RssiContributor::resetBatch ()
 {
-   m_svtGenerator.reset (&m_svtBatch);
+   m_GenericGenerator.reset (&m_GenericBatch);
    return;
 }
 /* ---------------------------------------------------------------------- */

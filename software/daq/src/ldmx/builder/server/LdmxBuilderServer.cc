@@ -175,7 +175,7 @@ static int launch_rssi_servers (ldmx::builder::server::Configuration const &cfg)
       // ------------------
       // Generate one event
       // ------------------
-      uint32_t         ctbs = servers.generateEvent (cfg.m_nsvtMsdr);
+      uint32_t         ctbs = servers.generateEvent (cfg.m_nGenericMsdr);
 
 
       nxtTimestamp = waitTill (nxtTimestamp, nsecs);

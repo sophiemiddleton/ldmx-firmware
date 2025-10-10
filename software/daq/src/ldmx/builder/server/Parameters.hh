@@ -94,9 +94,9 @@ public:
    char const            *m_trgPipe; /*!< Name of pipe for the trigger    */
    int                     m_period; /*!< The trigger period (usecs)      */
    unsigned short int  m_ntrgEvents; /*!< # trigger events/batch          */
-   unsigned short int  m_nsvtEvents; /*!< Number of events in an SVT batch*/
-   unsigned short int    m_nsvtMsdr;  /*!< Number of multisample data 
-                                           records in an SVT event        */
+   unsigned short int  m_nGenericEvents; /*!< Number of events in an Generic batch*/
+   unsigned short int    m_nGenericMsdr;  /*!< Number of multisample data 
+                                           records in an Generic event        */
    ldmx::builder::Logging::Level 
                            m_level;  /*!< The logging level               */
 };

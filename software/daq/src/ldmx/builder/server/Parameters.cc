@@ -62,7 +62,7 @@ Parameters::Parameters (int argc, char *const argv[])
       { "none"    , no_argument, 0, 0x80 | static_cast<int>(ConnectionType::None) },
       { "rssi"    , no_argument, 0, 0x80 | static_cast<int>(ConnectionType::Rssi) },
       { "tcpip"   , no_argument, 0, 0x80 | static_cast<int>(ConnectionType::TcpIp)},
-      { "svtEvents"    , required_argument, 0, 'e' },
+      { "GenericEvents"    , required_argument, 0, 'e' },
       { "triggerEvents", required_argument, 0, 't' },
       { "msrecord"     , required_argument, 0, 'm' },
       { "rate"         , required_argument, 0, 'r' },
@@ -77,8 +77,8 @@ Parameters::Parameters (int argc, char *const argv[])
    char const        *ports = "8192";
    int                 rate =  1;
 
-   unsigned short int nsvtEvents  = 16;  /* # SVT events/batch            */
-   unsigned short int nsvtMsdr    =  4;  /* # Multisample records/event   */
+   unsigned short int nGenericEvents  = 16;  /* # Generic events/batch            */
+   unsigned short int nGenericMsdr    =  4;  /* # Multisample records/event   */
 
 
    char const           *trgPipe  = "/tmp/ldmxTriggerPipe";
@@ -105,8 +105,8 @@ Parameters::Parameters (int argc, char *const argv[])
          case 't': {  ntrgEvents  = strtol (optarg, 0, 0); break; }
          case 'r': {  rate        = strtol (optarg, 0, 0); break; }
 
-         case 'e': {  nsvtEvents  = strtol (optarg, 0, 0); break; }
-         case 'm': {  nsvtMsdr    = strtol (optarg, 0, 0); break; }
+         case 'e': {  nGenericEvents  = strtol (optarg, 0, 0); break; }
+         case 'm': {  nGenericMsdr    = strtol (optarg, 0, 0); break; }
          case 'p': {  ports       = optarg;                break; }
          case 's': {  server      = optarg;                break; }
          }
@@ -119,8 +119,8 @@ Parameters::Parameters (int argc, char *const argv[])
    m_ports         = ports;
    m_trgPipe       = trgPipe;
    m_ntrgEvents    = ntrgEvents;
-   m_nsvtEvents    = nsvtEvents;
-   m_nsvtMsdr      = nsvtMsdr;
+   m_nGenericEvents    = nGenericEvents;
+   m_nGenericMsdr      = nGenericMsdr;
    m_level         = ldmx::builder::Logging::Level::Error;
    m_period        = rate ? 1000*1000/rate : 1000*1000;
 
@@ -131,8 +131,8 @@ Parameters::Parameters (int argc, char *const argv[])
 
    printf ("TriggerPipe  = %s\n",  m_trgPipe);
    printf ("TriggerBatch = %4u\n", m_ntrgEvents);
-   printf ("SvtBatch     = %4u SVT events/batch)\n",              m_nsvtEvents);
-   printf ("SvtNms       = %4u Multisample data records/event\n", m_nsvtMsdr);
+   printf ("GenericBatch     = %4u Generic events/batch)\n",              m_nGenericEvents);
+   printf ("GenericNms       = %4u Multisample data records/event\n", m_nGenericMsdr);
 
 
    return;
@@ -157,8 +157,8 @@ int Parameters::configure (ldmx::builder::server::Configuration *cfg) const
    cfg->m_ntrgEvents    = m_ntrgEvents;
    cfg->m_level         = m_level;
    cfg->m_period        = m_period;
-   cfg->m_nsvtEvents    = m_nsvtEvents;
-   cfg->m_nsvtMsdr      = m_nsvtMsdr;
+   cfg->m_nGenericEvents    = m_nGenericEvents;
+   cfg->m_nGenericMsdr      = m_nGenericMsdr;
 
    return 0;
 }

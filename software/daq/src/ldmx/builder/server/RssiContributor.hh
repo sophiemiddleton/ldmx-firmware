@@ -41,8 +41,8 @@
 
 
 #include "RssiConnection.hh"
-#include "ldmx/data/server/SvtGenerator.hh"
-#include "ldmx/data/server/SvtBatch.hh"
+#include "ldmx/data/server/GenericGenerator.hh"
+#include "ldmx/data/server/GenericBatch.hh"
 #include <rogue/interfaces/stream/Master.h>
 #include <memory>
 #include <time.h>
@@ -125,9 +125,9 @@ public:
    RssiConnection    m_connection;  /*!< The connection information       */
    Statistics volatile    m_stats;  /*!< The statistics                   */
    ldmx::data::server::
-   SvtGenerator    m_svtGenerator;  /*!< Generate an SVT batch            */
+   GenericGenerator    m_GenericGenerator;  /*!< Generate an Generic batch            */
    ldmx::data::server::
-   SvtBatch            m_svtBatch;  /*!< The memory for the generated data*/
+   GenericBatch            m_GenericBatch;  /*!< The memory for the generated data*/
    unsigned short int 
                 m_neventsPerBatch;  /*!< Number of events per batch       */
 };
