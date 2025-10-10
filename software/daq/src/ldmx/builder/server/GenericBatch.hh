@@ -1,11 +1,11 @@
 // -*-Mode: C++;-*-
 
-#ifndef __LDMX_BUILDER_SERVER_TRIGGERSERVER_HH__
-#define __LDMX_BUILDER_SERVER_TRIGGERSERVER_HH__
+#ifndef __LDMX_BUILDER_SERVER_GENERICBATCH_HH__
+#define __LDMX_BUILDER_SERVER_GENERICBATCH_HH__
 
 /* ---------------------------------------------------------------------- *//*!
 
-  \file   ldmx/builder/server/TriggerServer.hh
+  \file   ldmx/builder/server/GenericBatch.hh
   \brief  Composes and sends Generic event batches for the builder server
           emulator
   \author S. Middleton
