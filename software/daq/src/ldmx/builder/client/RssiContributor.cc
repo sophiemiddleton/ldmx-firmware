@@ -130,7 +130,7 @@ static void init (void *init_prms,
    InitPrms const *prms = reinterpret_cast<decltype(prms)>(init_prms);
 
    ctb->m_fpa  = prms->m_fpa;
-   ctb->m_type = Contribution::Type::GenericContributor;
+   ctb->m_type = Contribution::Type::Generic;
    ctb->m_id   = prms->m_id;
    return;
 }

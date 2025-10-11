@@ -1,0 +1,2 @@
+/usr/bin/ar qc libldmx_eb.a CMakeFiles/ldmx_eb.dir/Logging.cc.o
+/usr/bin/ranlib libldmx_eb.a

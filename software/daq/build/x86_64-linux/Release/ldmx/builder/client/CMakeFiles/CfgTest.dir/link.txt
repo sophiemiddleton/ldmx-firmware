@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG -rdynamic CMakeFiles/CfgTest.dir/CfgTest.cc.o CMakeFiles/CfgTest.dir/Configuration.cc.o -o CfgTest   -L/sdf/home/s/smidd/miniforge3/envs/rogue_tag/lib  -Wl,-rpath,/sdf/home/s/smidd/miniforge3/envs/rogue_tag/lib libldmx-builder-parser.a 

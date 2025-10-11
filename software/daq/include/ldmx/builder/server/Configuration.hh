@@ -74,8 +74,8 @@ public:
    const char                 *m_trgPipe;
    unsigned short int       m_ntrgEvents;
    ldmx::builder::Logging::Level m_level;
-   unsigned short int       m_nsvtEvents; /*!< # of events/SVT batch      */
-   unsigned short int         m_nsvtMsdr; /*!< # of multisample recs/event*/       
+   unsigned short int       m_nGenericEvents; /*!< # of events/genric batch      */
+   unsigned short int         m_nGenericMsdr; /*!< # of multisample recs/event*/       
 
 };
 /* ---------------------------------------------------------------------- */

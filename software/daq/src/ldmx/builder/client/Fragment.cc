@@ -205,7 +205,7 @@ Fragment::Fragment (uint64_t     timestamp,
       // Set the masks of generic and TRG contributions
       // ------------------------------------------
       Contribution const *ctb = reinterpret_cast<decltype(ctb)>(node);
-      if      (ctb->m_type == Contribution::Type::    generic) genericPresent |= mask;
+      if      (ctb->m_type == Contribution::Type::Generic) genericPresent |= mask;
       else if (ctb->m_type == Contribution::Type::Trigger) trgPresent |= mask;
 
 
@@ -272,11 +272,11 @@ Fragment::~Fragment ()
       // -----------------------------------------
       // Separate destruction by contribution type
       // -----------------------------------------
-      if (ctb->m_type == Type::generic)
+      if (ctb->m_type == Type::Generic)
       {
-         generic *generic = reinterpret_cast<decltype (generic)>(ctb);
+         GenericContributor *generic = reinterpret_cast<decltype (generic)>(ctb);
 
-         destructor::reportgeneric (id, ctb->m_sequence, generic->m_core.use_count ());
+         destructor::reportGeneric (id, ctb->m_sequence, generic->m_core.use_count ());
 
          generic->m_core.reset ();
       }

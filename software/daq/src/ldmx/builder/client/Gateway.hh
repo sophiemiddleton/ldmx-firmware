@@ -105,7 +105,7 @@ public:
 /* LOCAL PROTOTYPES                                                       */
 /* ---------------------------------------------------------------------- */
 static int32_t  copyFragment (uint32_t *dst32, Fragment const *fragment);
-static uint32_t      copyGeneric (uint8_t    *dst, Generic      const      *generic);
+static uint32_t      copyGeneric (uint8_t    *dst, GenericContributor      const      *GenericContributor);
 /* ====================================================================== */
 
 
@@ -424,7 +424,7 @@ inline static int32_t copyFragment (uint32_t *dst32, Fragment const *fragment)
   \param[ in] generic The generic data to copy
                                                                           */
 /* ---------------------------------------------------------------------- */
-inline static uint32_t copyGeneric (uint8_t *dst,  Generic const *generic)
+inline static uint32_t copyGeneric (uint8_t *dst,  GenericContributor const *generic)
 { 
    int               ievt = generic->m_evtIdx;
    std::shared_ptr<rogue::protocols::batcher::Data> 

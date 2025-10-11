@@ -105,7 +105,7 @@ RssiReceiver::RssiReceiver (ldmx::builder::client::Configuration const &cfg,
       m_contributors[idx] = RssiContributor::construct (idx + ctbBeg,
                                                         cfgCtbs[idx],
                                                         m_contributions.m_ctbs,
-                                                        sizeof (Generic));
+                                                        sizeof (GenericContributor));
    }
 
    return;

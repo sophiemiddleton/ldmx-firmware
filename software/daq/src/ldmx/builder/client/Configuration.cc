@@ -87,7 +87,7 @@ void Configuration::addContributor (char const *name,
                                     int      nevents)
 {
    ldmx::builder::client::CfgContributor 
-      ctb (CfgContributor::ContributorType::GenericContributer,
+      ctb (CfgContributor::ContributorType::Generic,
            CfgContributor::TransportType::Rssi,
            name,
            len,

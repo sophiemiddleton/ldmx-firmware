@@ -112,7 +112,7 @@ RssiServers::RssiServers  (ldmx::builder::server::Configuration const &cfg)
       uint8_t rceAddress = 0x80 + idx;
       m_servers[idx] = RssiContributor::construct (idx,
                                                    rceAddress,
-                                                   cfg.m_nsvtEvents,
+                                                   cfg.m_nGenericEvents,
                                                    ip, 
                                                    cfg.m_ports[idx], 
                                                    nframes);

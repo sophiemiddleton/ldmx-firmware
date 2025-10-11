@@ -1,0 +1,2 @@
+/usr/bin/ar qc libldmx-builder-parser.a CMakeFiles/ldmx-builder-parser.dir/CfgParser.cc.o
+/usr/bin/ranlib libldmx-builder-parser.a

@@ -182,7 +182,7 @@ inline bool CfgContributor::parse (char                      **str,
    if (compare (ctbType,  "Generic"))
    {
       ///std::cout << "Contributor type = Generic" << std::endl;
-      m_ctbType = CfgContributor::ContributorType::GenericContributor;
+      m_ctbType = CfgContributor::ContributorType::Generic;
       bool   err = defineGeneric (str, parameters);
 
       /// std::cerr << "CfgContribution::parse  Generic status" << err << std::endl;

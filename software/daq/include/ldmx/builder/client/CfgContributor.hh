@@ -193,7 +193,7 @@ inline CfgContributor::CfgContributor (ContributorType  ctbType,
 /* ---------------------------------------------------------------------- */
 inline bool CfgContributor::isGeneric () const
 {
-   bool   is_Generic = (m_ctbType == ContributorType::GenericContributor);
+   bool   is_Generic = (m_ctbType == ContributorType::Generic);
    return is_Generic;
 }
 /* ---------------------------------------------------------------------- */
